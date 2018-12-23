@@ -1,99 +1,260 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Highway1478 | Orbital 2018</title>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
 
-  <link rel="shortcut icon" href="TemplateData/favicon.ico">
-  <link rel="stylesheet" href="TemplateData/style.css">
-  <script src="TemplateData/UnityProgress.js"></script>  
-  <script src="Build/UnityLoader.js"></script>
-  <script>
-    var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Highway.json", {onProgress: UnityProgress});
-  </script>
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Lin Deming</title>
 </head>
-<body>
-  <script type="text/javascript">
-    window.onkeydown = function(e) {
-      if (e.keyCode == 32 && e.target == document.body) {
-        e.preventDefault();
-      }
-    };
-  </script>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <h1>Team 1478</h1>
-        <h2>Members: Bryan Chee & Lin Deming</h2>
+<body data-spy="scroll" data-target="#main-nav" id="home">
+  <!-- Navigation Section -->
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" id="main-nav">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Lin Deming</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a href="#project" class="nav-link">Projects</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="webgl-content">
-          <div id="gameContainer" style="width: 960px; height: 600px"></div>
-          <div class="footer">
-            <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="showcase">
+    <div class="primary-overlay text-white">
+      <div class="container mb-5">
+        <div class="row">
+          <div class="col text-center" id="heading">
+
+            <!-- Title -->
+            <h1 class="display-1">Lin Deming</h1>
+            <p class="lead">Undergraduate at NUS School of Computing</p>
+
+            <!-- Social Media -->
+            <div class="d-flex flex-row justify-content-around align-items-center mt-5">
+              <!-- Twitter -->
+              <div>
+                <a href="mailto:deminglindm@gmail.com" class="text-white">
+                  <i class="fa fa-envelope fa-3x"></i>
+                </a>
+              </div>
+              <!-- Facebook -->
+              <div>
+                <a href="https://twitter.com/deming_lin" class="text-white">
+                  <i class="fab fa-twitter fa-3x"></i>
+                </a>
+              </div>
+              <!-- Instagram -->
+              <div>
+                <a href="https://www.linkedin.com/in/lin-deming-267993123/" class="text-white">
+                  <i class="fab fa-linkedin fa-3x"></i>
+                </a>
+              </div>
+              <!-- Github -->
+              <div>
+                <a href="https://github.com/deming16" class="text-white">
+                  <i class="fab fa-github fa-3x"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 m-auto text-center">
+            <a href="documents/Lin_Deming.pdf" class="btn btn-outline-light">
+              <i class="fas fa-cloud"></i> Download Resume
+            </a>
           </div>
         </div>
       </div>
+
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <div id="about" class="text-center bg-danger text-white">
+    <div class="card card-body bg-danger text-white text-center py-5">
+      <h2>About Me</h2>
+      <p class="lead">I am a undergraduate majoring in computer science at NUS School of Computing.</p>
     </div>
 
-    <div class="row">
-      <div class="col-sm-12">
-        <h1>Tips</h1>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-          </ol>
+    <div class="card card-body py-5 bg-danger">
+      <h1>Skills</h3>
 
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <a target ="_blank" href="https://www.youtube.com/watch?v=fj0upELjKc0&feature=youtu.be#t=01m19s"> <img src="Tutorial.JPG" alt="Click to watch tutorial video"></a>
-            </div>
+        <div class="card-deck">
 
-            <div class="item">
-              <img src="JumpTip.JPG" alt="Time your jump carefully">
-            </div>
+          <div class="card bg-danger border-0">
+            <div class="card-body">
+              <h4 class="card-title pb-3">Design</h4>
+              <div class="dev-icon">
+                <i class="devicon-html5-plain-wordmark"></i>
+                <i class="devicon-css3-plain-wordmark"></i>
+                <i class="devicon-bootstrap-plain-wordmark"></i>
+                <i class="devicon-sass-original"></i>
+              </div>
 
-            <div class="item">
-              <img src="FlipTip.JPG" alt="Controls are reversed during screen flip">
-            </div>
-
-            <div class="item">
-              <img src="QuitTip.JPG" alt="Quit by bring up pause menu">
+              <p class="card-text pt-3"></p>
             </div>
           </div>
 
-          <!-- Left and right controls -->
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-          </a>
+          <div class="card bg-danger border-0">
+            <div class="card-body">
+              <h4 class="card-title pb-3">Code</h4>
+              <div class="dev-icon">
+                <i class="devicon-java-plain"></i>
+                <i class="devicon-javascript-plain colored"></i>
+              </div>
+
+              <p class="card-text pt-3"></p>
+            </div>
+          </div>
+
+          <div class="card bg-danger border-0">
+            <div class="card-body">
+              <h4 class="card-title pb-3">Tools</h4>
+              <div class="dev-icon">
+                <i class="devicon-git-plain"></i>
+                <i class="devicon-github-plain-wordmark colored"></i>
+                <i class="devicon-babel-plain colored"></i>
+
+              </div>
+
+              <p class="card-text pt-3"></p>
+            </div>
+          </div>
+
         </div>
+
+
+
+    </div>
+
+  </div>
+
+
+  <!-- Projects -->
+  <div id="project" class="text-center">
+    <div class="card card-body bg-success text-white py-5">
+      <h2>My Projects</h2>
+      <p class="lead">Below features my projects and mini-projects</p>
+    </div>
+
+    <div class="card card-body py-5 bg-success">
+      <div class="card-deck">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Highway 1478</h4>
+            <p class="card-text">A 3D endless runner game with a global scoreboard so that you can compete with your
+              friends!</p>
+            <p class="p-2 mb-3 bg-dark text-white">
+              <a href="https://github.com/deming16/Highway-1478" class="text-white">Github Link</a>
+            </p>
+            <p class="p-2 mb-3 bg-dark text-white">
+              C#, Unity
+            </p>
+          </div>
+          <div class="card-footer">
+            <h6 class="text-muted">Duration: May 2018 - July 2018</h6>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">ModsUni</h4>
+            <p class="card-text">ModsUni helps NUS students generate their candidature plan automatically based on what
+              modules they want and need to take</p>
+            <p class="p-2 mb-3 bg-dark text-white">
+              <a href="https://github.com/CS2103-AY1819S1-W17-2/main" class="text-white">Github Link</a>
+            </p>
+            <p class="p-2 mb-3 bg-dark text-white">
+              Java
+            </p>
+          </div>
+          <div class="card-footer">
+            <h6 class="text-muted">Duration: Aug 2018 - November 2018</h6>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">My Portfolio Website</h4>
+            <p class="card-text">This website that you see here is built from scratch by me in an attempt to learn some
+              web design :)</p>
+            <p class="p-2 mb-3 bg-dark text-white">
+              Github Link Coming Soon
+            </p>
+            <p class="p-2 mb-3 bg-dark text-white">
+              HTML 5, CSS 3, Bootstrap 4
+            </p>
+          </div>
+          <div class="card-footer">
+            <h6 class="text-muted">Duration: Dec 2018 - Present</h6>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
 
+  <!-- Footer -->
+  <footer id="main-footer" class="bg-black text-white text-center">
+    <span class="text-muted">&copy; Lin Deming</span>
+  </footer>
 
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 
+  <script>
+
+    // Init Scrollspy
+    $('body').scrollspy({ target: '#main-nav' });
+
+    //Smooth Scrolling
+    $("#main-nav a").on('click', function (e) {
+      if (this.hash !== "") {
+        e.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 500, function () {
+          window.location.hash = hash;
+        });
+      }
+    })
+  </script>
 </body>
+
 </html>
