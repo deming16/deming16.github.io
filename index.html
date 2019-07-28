@@ -17,6 +17,29 @@
 
 <body>
 
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+    <label for="navi-toggle" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
+
+    <div class="navigation__background">&nbsp;</div>
+
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#about" class="navigation__link"><span>01</span>About me</a>
+          <label for="navi-toggle"></label>
+        </li>
+        <li class="navigation__item"><a href="#skills" class="navigation__link"><span>02</span>Skills</a></li>
+        <li class="navigation__item"><a href="#experience" class="navigation__link"><span>03</span>Experience</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Education</a></li>
+        <li class="navigation__item"><a href="#projects" class="navigation__link"><span>05</span>Projects</a></li>
+      </ul>
+    </nav>
+  </div>
+
   <header class="header">
 
     <div class="header__text-box">
@@ -31,7 +54,7 @@
   </header>
 
   <main>
-    <section class="section-about">
+    <section class="section-about" id="about">
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary heading-secondary--dark">
           About Me
@@ -69,7 +92,7 @@
     </section>
 
     <!-- SKILLS SECTION -->
-    <section class="section-skills">
+    <section class="section-skills" id="skills">
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary heading-secondary--light">
           Skills
@@ -153,7 +176,7 @@
     </section>
 
     <!-- EXPERIENCE SECTION -->
-    <section class="section-experience">
+    <section class="section-experience" id="experience">
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary heading-secondary--dark">
           Experience
@@ -246,7 +269,8 @@
       </div>
     </section>
 
-    <section class="section-projects">
+    <!-- PROJECTS SECTION -->
+    <section class="section-projects" id="projects">
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary heading-secondary--dark">
           Projects
@@ -349,6 +373,18 @@
       </div>
     </section>
   </main>
+
+  <script>
+    var navItems = document.getElementsByClassName('navigation__item');
+
+    Array.from(navItems).forEach((item) => {
+      item.addEventListener("click", toggleNavi);
+    });
+
+    function toggleNavi(e) {
+      document.getElementById("navi-toggle").checked = false;
+    }
+  </script>
 </body>
 
 
