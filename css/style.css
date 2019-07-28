@@ -201,7 +201,7 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }
+      background-image: url(../img/landing.jpg); }
     .card__picture--2 {
       background-image: url(../img/nat-5.jpg); }
     .card__picture--3 {
@@ -213,8 +213,8 @@ body {
     text-align: center;
     color: #fff;
     position: absolute;
-    top: 12rem;
-    right: 2rem;
+    top: 18rem;
+    right: .5rem;
     width: 75%; }
   .card__heading-span {
     padding: 1rem 1.5rem;
