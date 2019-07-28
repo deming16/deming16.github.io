@@ -191,8 +191,12 @@ body {
     overflow: hidden; }
     .card__side--back {
       transform: rotateY(180deg); }
-      .card__side--back-1 {
+      .card__side--back--1 {
+        background-image: linear-gradient(to right bottom, #f22222, #a91717); }
+      .card__side--back--2 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+      .card__side--back--3 {
+        background-image: linear-gradient(to right bottom, #4e676c, #36484b); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -224,7 +228,11 @@ body {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(242, 34, 34, 0.85), rgba(169, 23, 23, 0.85)); }
+    .card__heading-span--2 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(78, 103, 108, 0.85), rgba(54, 72, 75, 0.85)); }
   .card__details {
     padding: 3rem; }
     .card__details ul {
@@ -496,8 +504,8 @@ body {
 
 .section-experience {
   background-color: #f7f7f7;
-  padding: 25rem 0;
-  margin-top: -20vh; }
+  padding: 30rem 0;
+  margin-top: -10vh; }
 
 .section-projects {
   background-color: #f7f7f7;
