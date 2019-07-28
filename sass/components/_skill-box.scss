@@ -16,4 +16,19 @@
     transform: translateY(-1.5rem) scale(1.03);
   }
 
+  &__text {
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+      }
+    }
+  }
+
 }
