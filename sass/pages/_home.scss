@@ -6,11 +6,12 @@
 
 .section-skills {
   padding: 13rem 0;
-  background-image: linear-gradient(
-    to right bottom, 
-    rgba($color-primary-light, 0.800), 
-    rgba($color-primary-dark, 0.800)), 
-  url('');
+  background-color: #2e3830;
+  // background-image: linear-gradient(
+  //   to right bottom, 
+  //   rgba($color-primary-light, 0.800), 
+  //   rgba($color-primary-dark, 0.800)), 
+  // url('');
   transform: skewY(-7deg);
   margin-top: -10vh;
 
