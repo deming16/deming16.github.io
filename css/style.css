@@ -203,12 +203,14 @@ body {
     overflow: hidden; }
     .card__side--back {
       transform: rotateY(180deg); }
-      .card__side--back--1 {
+      .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #f22222, #a91717); }
-      .card__side--back--2 {
+      .card__side--back-2 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
-      .card__side--back--3 {
+      .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #4e676c, #36484b); }
+      .card__side--back-4 {
+        background-image: linear-gradient(to right bottom, #7FB3D5, #2471A3); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -225,6 +227,8 @@ body {
       background-image: url(../img/pongproject.jpg); }
     .card__picture--3 {
       background-image: url(../img/highwayproject.jpeg); }
+    .card__picture--4 {
+      background-image: url(../img/modsuniproject.png); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -245,6 +249,9 @@ body {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(78, 103, 108, 0.85), rgba(54, 72, 75, 0.85)); }
+    .card__heading-span--4 {
+      margin-left: 3rem;
+      background-image: linear-gradient(to right bottom, rgba(127, 179, 213, 0.85), rgba(36, 113, 163, 0.85)); }
   .card__details {
     padding: 3rem; }
     .card__details ul {

@@ -22,16 +22,20 @@
     &--back {
       transform: rotateY(180deg);
 
-      &--1 {
+      &-1 {
         background-image: linear-gradient(to right bottom, $color-red-light, $color-red-dark)
       }
 
-      &--2 {
+      &-2 {
         background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark)
       }
 
-      &--3 {
+      &-3 {
         background-image: linear-gradient(to right bottom, $color-stone-light, $color-stone-dark)
+      }
+
+      &-4 {
+        background-image: linear-gradient(to right bottom, #7FB3D5  , #2471A3  )
       }
     }
   }
@@ -64,6 +68,10 @@
     &--3 {
       background-image: url(../img/highwayproject.jpeg);
     }
+
+    &--4 {
+      background-image: url(../img/modsuniproject.png);
+    }
   }
 
   &__heading {
@@ -93,6 +101,11 @@
 
     &--3 {
       background-image: linear-gradient(to right bottom, rgba($color-stone-light, .85), rgba($color-stone-dark, .85));
+    }
+
+    &--4 {
+      margin-left: 3rem;
+      background-image: linear-gradient(to right bottom, rgba(#7FB3D5 , .85), rgba(#2471A3 , .85));
     }
   }
 
