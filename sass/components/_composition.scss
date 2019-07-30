@@ -5,23 +5,44 @@
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
     border-radius: .2rem; 
-    position: absolute;
+    // position: absolute;
     transition: all .2s;
     outline-offset: 2rem;
+
+    @include respond(tab-port) {
+      // float: left;
+      // position: relative;
+      width: 100%;
+      box-shadow: 0 1.5 3rem rgba($color-black, .2);
+    }
 
     &--p1 {
       left: 0;
       top: -2rem;
+
+      @include respond(tab-port) {
+        top: 0;
+      }
     }
 
     &--p2 {
-      right: 0;
-      top: 2rem;
+      margin-left: 15rem;
+      // right: 0;
+      // top: 2rem;
+
+      @include respond(tab-port) {
+        margin-left: 0;
+        top: 0;
+      }
     }
 
     &--p3 {
       left: 20%;
       top: 10rem;
+
+      @include respond(tab-port) {
+        top: 0;
+      }
     }
 
     &:hover {
