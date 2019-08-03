@@ -7,7 +7,6 @@
   padding-left: 9rem;
   font-size: $default-font-size;
   transform: skewX(-12deg);
-  display: flex;
 
   @include respond(tab-port) {
     width: 100%;
@@ -27,6 +26,7 @@
 
     @include respond(tab-port) {
       transform: translateX(-3rem);
+      margin: auto;
     }
   
   }

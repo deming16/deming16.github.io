@@ -386,8 +386,7 @@ body {
   padding: 6rem;
   padding-left: 9rem;
   font-size: 1.6rem;
-  transform: skewX(-12deg);
-  display: flex; }
+  transform: skewX(-12deg); }
   @media only screen and (max-width: 56.25em) {
     .experience {
       width: 100%;
@@ -404,7 +403,8 @@ body {
     position: relative; }
     @media only screen and (max-width: 56.25em) {
       .experience__shape {
-        transform: translateX(-3rem); } }
+        transform: translateX(-3rem);
+        margin: auto; } }
   .experience__img {
     height: 100%;
     backface-visibility: hidden;
