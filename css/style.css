@@ -42,7 +42,6 @@ body {
       padding: 0; } }
 
 .come-in {
-  transform: translateY(150px);
   animation: come-in 0.8s ease forwards; }
 
 .come-in:nth-child(odd) {
@@ -78,7 +77,11 @@ body {
     transform: translate(0); } }
 
 @keyframes come-in {
-  to {
+  0% {
+    opacity: 0;
+    transform: translateY(150px); }
+  100% {
+    opacity: 1;
     transform: translateY(0); } }
 
 body {
