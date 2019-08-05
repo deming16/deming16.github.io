@@ -55,7 +55,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 1500;
+    z-index: 0;
 
     opacity: 0;
     width: 0;
@@ -90,6 +90,10 @@
       background-size: 250%;
       transition: all .4s;
 
+      @include respond(phone) {
+        font-size: 2.2rem;
+      }
+
       span {
         margin-right: 1.5rem;
         display: inline-block;
@@ -112,6 +116,7 @@
   &__checkbox:checked ~ &__nav {
     opacity: 1;
     width: 100%;
+    z-index: 1500;
   }
 
   // ICON
