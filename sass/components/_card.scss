@@ -22,6 +22,10 @@
     &--back {
       transform: rotateY(180deg);
 
+      &-portfolio {
+        background-image: linear-gradient(to right bottom, $color-stone-light, $color-stone-dark)
+      }
+
       &-1 {
         background-image: linear-gradient(to right bottom, $color-red-light, $color-red-dark)
       }
@@ -36,6 +40,10 @@
 
       &-4 {
         background-image: linear-gradient(to right bottom, #7FB3D5  , #2471A3  )
+      }
+
+      &-hitit {
+        background-image: linear-gradient(to right bottom, $color-secondary-light  , $color-secondary-dark  )
       }
     }
   }
@@ -58,20 +66,34 @@
     
     &--1 {
       // background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/nat-5.jpg);
-      background-image: url(../img/caroushareproject.png);
-    }
-
-    &--2 {
-      background-image: url(../img/pongproject.jpg);
+      background-image: url(../img/portfolioproject.png);
     }
 
     &--3 {
-      background-image: url(../img/highwayproject.jpeg);
+      // background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/nat-5.jpg);
+      background-image: url(../img/caroushareproject.png);
     }
 
     &--4 {
+      background-image: url(../img/pongproject.jpg);
+    }
+
+    &--5 {
+      background-image: url(../img/highwayproject.jpeg);
+    }
+
+    &--6 {
       background-image: url(../img/modsuniproject.png);
     }
+
+    &--7 {
+      background-image: url(../img/joinerproject.png);
+    }
+
+    &--8 {
+      background-image: url(../img/hititproject.png);
+    }
+    
   }
 
   &__heading {
@@ -91,6 +113,10 @@
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
 
+    &--portfolio {
+      background-image: linear-gradient(to right bottom, rgba($color-stone-light, .85), rgba($color-stone-dark, .85));
+    }
+
     &--1 {
       background-image: linear-gradient(to right bottom, rgba($color-red-light, .85), rgba($color-red-dark, .85));
     }
@@ -107,6 +133,15 @@
       margin-left: 3rem;
       background-image: linear-gradient(to right bottom, rgba(#7FB3D5 , .85), rgba(#2471A3 , .85));
     }
+
+    &--6 {
+      background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
+    }
+
+    &--hitit {
+      background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
+    }
+    
   }
 
   &__details {
@@ -134,10 +169,5 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-
-  // BUTTONS
-  &__btn {
-    
   }
 }
