@@ -6,6 +6,10 @@
   position: relative;
   height: 52rem;
 
+  &__box {
+    margin-bottom: 2rem;
+  }
+  
   &__side {
     height: 52rem;
     transition: all .8s ease;
