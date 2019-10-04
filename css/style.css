@@ -410,11 +410,12 @@ body {
       padding: 1rem; }
 
 .experience {
-  width: 75%;
+  width: 90%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  padding: 6rem;
+  padding: 4rem;
+  padding-right: 9rem;
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg); }
@@ -444,6 +445,9 @@ body {
     @media only screen and (max-width: 68.25em) {
       .experience__text {
         transform: skewX(0); } }
+  .experience__date {
+    padding-top: 1.5rem;
+    text-align: right; }
   .experience__caption {
     position: absolute;
     top: 50%;

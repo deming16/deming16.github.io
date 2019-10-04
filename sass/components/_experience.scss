@@ -1,9 +1,10 @@
 .experience {
-  width: 75%;
+  width: 90%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba($color-black, .1);
   background-color: $color-white;
-  padding: 6rem;
+  padding: 4rem;
+  padding-right: 9rem;
   padding-left: 9rem;
   font-size: $default-font-size;
   transform: skewX(-12deg);
@@ -42,6 +43,11 @@
     @include respond(tab-port) {
       transform: skewX(0);
     }
+  }
+
+  &__date {
+    padding-top: 1.5rem;
+    text-align: right;
   }
 
   &__caption {
