@@ -407,11 +407,11 @@ body {
     transform: translateY(-1.5rem) scale(1.03); }
   .skill-box__text ul {
     list-style: none;
-    width: 80%;
+    width: 100%;
     margin: 0 auto; }
     .skill-box__text ul li {
-      text-align: center;
-      font-size: 1.5rem;
+      text-align: left;
+      font-size: 1.4rem;
       padding: 1rem; }
 
 .experience {
