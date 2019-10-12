@@ -31,7 +31,7 @@ body {
   
   &--sub {
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 1.75rem;
   
@@ -41,7 +41,7 @@ body {
     animation-timing-function: ease-out;
 
     @include respond(phone) {
-      letter-spacing: .5rem;
+      letter-spacing: .3rem;
     }
   }
 }
@@ -91,4 +91,8 @@ body {
   &:not(:last-child) {
     margin-bottom: 3rem;
   }
+
+.txt-type {
+  justify-content: center;
+}
 }

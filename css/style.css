@@ -41,6 +41,9 @@ body {
     body {
       padding: 0; } }
 
+.wow {
+  visibility: hidden; }
+
 .come-in {
   animation: come-in 0.8s ease forwards; }
 
@@ -110,7 +113,7 @@ body {
         font-family: 5rem; } }
   .heading-primary--sub {
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 1.75rem;
     animation-name: moveInRight;
@@ -118,7 +121,7 @@ body {
     animation-timing-function: ease-out; }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
-        letter-spacing: .5rem; } }
+        letter-spacing: .3rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -152,6 +155,8 @@ body {
   font-size: 1.6rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
+  .paragraph .txt-type {
+    justify-content: center; }
 
 .u-center-text {
   text-align: center; }
@@ -545,6 +550,8 @@ body {
   .header__logo {
     height: 3.5rem; }
   .header__text-box {
+    width: 80%;
+    margin: auto;
     position: absolute;
     top: 40%;
     left: 50%;
