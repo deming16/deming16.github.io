@@ -234,7 +234,7 @@ body {
   display: inline-block;
   text-decoration: none;
   border-bottom: 0.1rem solid #000;
-  padding: .3rem;
+  padding: 1rem;
   transition: all .2s; }
 
 .btn-text:hover {
@@ -418,16 +418,19 @@ body {
   width: 90%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  /* background-color: #fff; */
   padding: 4rem;
   padding-right: 9rem;
   padding-left: 9rem;
   font-size: 1.6rem;
-  transform: skewX(-12deg); }
+  /* transform: skewX(-12deg);  */
+}
   @media only screen and (max-width: 68.25em) {
     .experience {
       width: 100%;
-      transform: skewX(0); } }
+      transform: skewX(0); 
+    } 
+  }
   .experience__shape {
     width: 15rem;
     height: 15rem;
@@ -446,13 +449,18 @@ body {
     backface-visibility: hidden;
     transition: all .2s; }
   .experience__text {
-    transform: skewX(12deg); }
+    /* transform: skewX(12deg); */
+   }
     @media only screen and (max-width: 68.25em) {
       .experience__text {
         transform: skewX(0); } }
   .experience__date {
     padding-top: 1.5rem;
     text-align: right; }
+  .experience__heading {
+    font-size: 24px;
+    color: #2e3830;
+  }
   .experience__caption {
     position: absolute;
     top: 50%;
