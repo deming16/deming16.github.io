@@ -29,7 +29,7 @@ html {
       font-size: 56.25%; } }
   @media only screen and (max-width: 68.25em) {
     html {
-      font-size: 50%; } }
+      font-size: 41%; } }
   @media only screen and (min-width: 112.5em) {
     html {
       font-size: 65%; } }
@@ -415,7 +415,7 @@ body {
       padding: 1rem; }
 
 .experience {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   /* background-color: #fff; */
@@ -458,7 +458,7 @@ body {
     padding-top: 1.5rem;
     text-align: right; }
   .experience__heading {
-    font-size: 24px;
+    font-size: 3rem;
     color: #2e3830;
   }
   .experience__caption {
@@ -576,7 +576,8 @@ body {
         margin-bottom: 6rem; } }
   @media only screen and (max-width: 68.25em) {
     .row {
-      max-width: 50rem;
+      /* max-width: 50rem; */
+      max-width: 69rem;
       padding: 0 3rem; } }
   .row::after {
     content: "";
@@ -594,17 +595,17 @@ body {
       .row [class^="col-"] {
         width: 100% !important; } }
   .row .col-1-of-2 {
-    width: calc((100% - 6rem) / 2); }
+    width: calc((100% - 8rem) / 2); }
   .row .col-1-of-3 {
-    width: calc((100% - 2 * 6rem) / 3); }
+    width: calc((100% - 2 * 8rem) / 3); }
   .row .col-2-of-3 {
-    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+    width: calc(2 * ((100% - 2 * 8rem) / 3) + 8rem); }
   .row .col-1-of-4 {
-    width: calc((100% - 3 * 6rem) / 4); }
+    width: calc((100% - 3 * 8rem) / 4); }
   .row .col-2-of-4 {
-    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+    width: calc(2 * ((100% - 3 * 8rem) / 4) + 8rem); }
   .row .col-3-of-4 {
-    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+    width: calc(3 * ((100% - 3 * 8rem) / 4) + 2 * 8rem); }
 
 .navigation__checkbox {
   display: none; }
