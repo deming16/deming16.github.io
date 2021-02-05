@@ -17,11 +17,11 @@
   },
   "homepage": "https://github.com/deming16/deming16.github.io#readme",
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.14.1"
   },
   "dependencies": {
     "animate.css": "^3.7.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.1",
     "wowjs": "^1.1.3"
   }
 }
