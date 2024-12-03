@@ -1969,6 +1969,22 @@ video {
   animation: moveInRight 1s ease-out;
 }
 
+@keyframes moveInBottom {
+  0% {
+    transform: translateY(3rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-moveInBottom {
+  animation: moveInBottom 0.5s ease-out 0.75s forwards;
+}
+
 .rounded-full {
   border-radius: 10rem;
 }
@@ -2050,6 +2066,11 @@ video {
   letter-spacing: 3.5rem;
 }
 
+.text-\[\#000\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
 .text-\[\#777\] {
   --tw-text-opacity: 1;
   color: rgb(119 119 119 / var(--tw-text-opacity, 1));
@@ -2058,11 +2079,6 @@ video {
 .text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#000\] {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
 .text-gray-800 {

@@ -29,6 +29,7 @@ module.exports = {
       animation: {
         moveInLeft: "moveInLeft 1s ease-out",
         moveInRight: "moveInRight 1s ease-out",
+        moveInBottom: "moveInBottom 0.5s ease-out 0.75s forwards",
       },
       keyframes: {
         moveInLeft: {
@@ -40,6 +41,10 @@ module.exports = {
           "0%": { opacity: 0, transform: "translateX(10rem)" },
           "80%": { transform: "translateX(-1rem)" },
           "100%": { opacity: 1, transform: "translateX(0)" },
+        },
+        moveInBottom: {
+          "0%": { transform: "translateY(3rem)", opacity: 0 },
+          "100%": { transform: "translateY(0)", opacity: 1 },
         },
       },
     },

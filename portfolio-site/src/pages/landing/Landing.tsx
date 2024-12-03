@@ -1,4 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import WhiteButton from "../../components/WhiteButton";
+import { faCloud } from "@fortawesome/free-solid-svg-icons";
 
 const Landing = () => {
   return (
@@ -16,19 +18,13 @@ const Landing = () => {
         </div>
 
         <WhiteButton
+          classes="animate-moveInBottom"
           text={
             <>
-              <i className="fas fa-cloud"></i> Resume
+              <FontAwesomeIcon icon={faCloud} /> Resume
             </>
           }
         />
-        <a
-          href="/documents/Lin_Deming.pdf"
-          target="_blank"
-          className="btn btn--white btn--animated"
-        >
-          <i className="fas fa-cloud"></i> Resume
-        </a>
       </div>
     </header>
   );
