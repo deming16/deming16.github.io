@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/deming16.github.io/static/css/main.f855e6bc.css",
+    "main.js": "/deming16.github.io/static/js/main.00b7e968.js",
+    "static/js/453.534db5b8.chunk.js": "/deming16.github.io/static/js/453.534db5b8.chunk.js",
+    "static/media/logo.svg": "/deming16.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/deming16.github.io/index.html",
+    "main.f855e6bc.css.map": "/deming16.github.io/static/css/main.f855e6bc.css.map",
+    "main.00b7e968.js.map": "/deming16.github.io/static/js/main.00b7e968.js.map",
+    "453.534db5b8.chunk.js.map": "/deming16.github.io/static/js/453.534db5b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.00b7e968.js"
+  ]
+}
