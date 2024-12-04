@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import About from "./pages/about/About";
-import Education from "./pages/education/education";
+import Education from "./pages/education/Education";
 import Experience from "./pages/experience/Experience";
 import Landing from "./pages/landing/Landing";
 import Skills from "./pages/skills/Skills";

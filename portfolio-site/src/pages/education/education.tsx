@@ -1,37 +1,35 @@
+import ProjectCard from "../../components/ProjectCard";
+import SecondaryHeader from "../../components/SecondaryHeader";
+
 const Education = () => {
   return (
     <>
-      <div className="wow fadeInUp">
-        <div className="experience">
-          <div className="experience__text">
-            <h3 className="experience__heading">
-              National University of Singapore
-            </h3>
+      <div className="wow fadeInUp mx-auto grid max-w-[114rem]">
+        <div className="wow fadeInUp mb-20 mt-20 text-center">
+          <SecondaryHeader text="Education" type="dark" />
+        </div>
+        <div className="text-5xl">National University of Singapore</div>
+        <div className="text-3xl">
+          Bachelor's Degree, Computer Science (2021)
+        </div>
+        <div className="text-xl">
+          <b>Software Engineering Focus Area (Merit): </b> Software Engineering,
+          Software Design Principles and Patterns, Formal Methods of Software
+          Engineering
+        </div>
+        <div className="text-xl">
+          <b>Other Relevant Coursework: </b> Relational Databases, Data
+          Structures and Algorithms, Computer Networks, Internet Architecture,
+          Operating Systems
+        </div>
 
-            <h4 className="u-margin-bottom-small">
-              Bachelor's Degree, Computer Science
-            </h4>
-            <p>
-              <b>Software Engineering Focus Area (Merit): </b>
-            </p>
-            <ul className="u-margin-bottom-small">
-              <li>Software Engineering</li>
-              <li>Software Design Principles and Patterns</li>
-              <li>Formal Methods for Software Engineering</li>
-            </ul>
-            <p>
-              <b>Other Relevant Coursework: </b>
-            </p>
-            <ul>
-              <li>Relational Databases</li>
-              <li>Data Structures and Algorithms</li>
-              <li>Design and Analysis of Algorithms</li>
-              <li>Computer Networks</li>
-              <li>Internet Architecture</li>
-              <li>Operating Systems</li>
-            </ul>
-            <p className="experience__date">Aug 2017 - Present</p>
-          </div>
+        <div className="text-5xl">Projects</div>
+        <div className="grid grid-cols-3 gap-4">
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
         </div>
       </div>
     </>
