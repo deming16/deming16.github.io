@@ -19,7 +19,9 @@ function App() {
       <About />
       <Skills />
       <Experience />
-      <Education />
+      <div>
+        <Education />
+      </div>
     </div>
   );
 }
