@@ -6,6 +6,7 @@ import Landing from "./pages/landing/Landing";
 import Skills from "./pages/skills/Skills";
 //@ts-ignore
 import WOW from "wowjs";
+import Navigation from "./components/Navigation";
 
 function App() {
   useEffect(() => {
@@ -15,6 +16,7 @@ function App() {
   }, []);
   return (
     <div className="font-roboto text-[1.6rem] font-normal leading-[1.7] text-[#777]">
+      <Navigation />
       <Landing />
       <About />
       <Skills />

@@ -4,7 +4,7 @@ import SecondaryHeader from "../../components/SecondaryHeader";
 const Education = () => {
   return (
     <>
-      <div className="wow fadeInUp mx-auto grid max-w-[114rem]">
+      <div id="education" className="wow fadeInUp mx-auto grid max-w-[114rem]">
         <div className="wow fadeInUp mb-20 mt-20 text-center">
           <SecondaryHeader text="Education" type="dark" />
         </div>

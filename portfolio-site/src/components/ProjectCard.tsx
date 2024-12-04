@@ -3,11 +3,11 @@ import SecondaryHeader from "./SecondaryHeader";
 const ProjectCard = () => {
   return (
     <div className="wow fadeInUp">
-      <div className="perspective-[150rem] group relative h-[30rem] bg-[#f5f5f5]">
-        <div className="backface-hidden card__side--front absolute left-0 top-0 h-[30rem] w-full transform overflow-hidden rounded-[10px] shadow-[0_1.5rem_4rem_rgba(0,0,0,0.15)] transition-all transition-transform duration-500 duration-[800ms] ease-in-out group-hover:[transform:rotateY(-180deg)]">
+      <div className="perspective-150 group relative h-[30rem] bg-[#f5f5f5]">
+        <div className="card__side--front absolute left-0 top-0 h-[30rem] w-full transform rounded-[10px] shadow-[0_1.5rem_4rem_rgba(0,0,0,0.15)] duration-[800ms] ease-in-out [backface-visibility:hidden] group-hover:[transform:rotateY(-180deg)]">
           <div>
             <img
-              className="h-[20rem] bg-cover bg-center bg-blend-screen"
+              className="backface-hidden h-[20rem] bg-cover bg-center bg-blend-screen"
               src={pic}
             />
           </div>
@@ -29,8 +29,8 @@ const ProjectCard = () => {
             </ul>
           </h4>
         </div>
-        <div className="backface-hidden absolute left-0 top-0 h-[30rem] w-full transform rounded-[10px] shadow-[0_1.5rem_4rem_rgba(0,0,0,0.15)] transition-all duration-[800ms] ease-in-out [transform:rotateY(180deg)] group-hover:[transform:rotateY(0)]">
-          <div className="absolute left-1/2 top-1/2 h-[80%] w-[70%] -translate-x-1/2 -translate-y-1/2">
+        <div className="absolute left-0 top-0 h-[30rem] w-full rounded-[10px] shadow-[0_1.5rem_4rem_rgba(0,0,0,0.15)] transition-all duration-[800ms] ease-in-out [backface-visibility:hidden] [transform:rotateY(180deg)] group-hover:[transform:rotateY(0)]">
+          <div className="backface-hidden absolute left-1/2 top-1/2 h-[80%] w-[70%] -translate-x-1/2 -translate-y-1/2">
             <p>
               <SecondaryHeader text="Gyroscope Pong" type="dark" />
               • Made a multiplayer game where players play using a shared screen
