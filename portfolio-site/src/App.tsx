@@ -7,12 +7,15 @@ import Skills from "./pages/skills/Skills";
 //@ts-ignore
 import WOW from "wowjs";
 import Navigation from "./components/Navigation";
+import { initTypeWriter } from "./scripts/typewriter";
 
 function App() {
   useEffect(() => {
     new WOW.WOW({
       live: false,
     }).init();
+
+    initTypeWriter();
   }, []);
   return (
     <div className="font-roboto text-[1.6rem] font-normal leading-[1.7] text-[#777]">

@@ -10,7 +10,7 @@ const WhiteButton = ({ text, classes = "" }: Props) => {
   return (
     <BaseButton
       text={text}
-      btnStyle={`bg-white text-gray-800 relative ${classes}`}
+      btnStyle={`bg-white text-gray-800 after:bg-white ${classes}`}
       insetStyle="absolute inset-0 bg-white"
     />
   );

@@ -62,7 +62,7 @@ module.exports = {
       animation: {
         moveInLeft: "moveInLeft 1s ease-out",
         moveInRight: "moveInRight 1s ease-out",
-        moveInBottom: "moveInBottom 0.5s ease-out 0.75s forwards",
+        moveInBottom: "moveInBottom 0.5s ease-out 0.75s backwards",
       },
       keyframes: {
         moveInLeft: {
