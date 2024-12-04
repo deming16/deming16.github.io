@@ -3,12 +3,14 @@ import SecondaryHeader from "./SecondaryHeader";
 const ProjectCard = () => {
   return (
     <div className="wow fadeInUp">
-      <div className="perspective-[150rem] relative h-[30rem] bg-[#f5f5f5]">
-        <div className="backface-hidden absolute left-0 top-0 h-[30rem] w-full overflow-hidden rounded-[10px] shadow-[0_1.5rem_4rem_rgba(0,0,0,0.15)] transition-all duration-[800ms] ease-in-out hover:rotate-[rotateY(-180deg)]">
-          <img
-            className="h-[20rem] bg-cover bg-center bg-blend-screen"
-            src={pic}
-          />
+      <div className="perspective-[150rem] group relative h-[30rem] bg-[#f5f5f5]">
+        <div className="backface-hidden card__side--front absolute left-0 top-0 h-[30rem] w-full transform overflow-hidden rounded-[10px] shadow-[0_1.5rem_4rem_rgba(0,0,0,0.15)] transition-all transition-transform duration-500 duration-[800ms] ease-in-out group-hover:[transform:rotateY(-180deg)]">
+          <div>
+            <img
+              className="h-[20rem] bg-cover bg-center bg-blend-screen"
+              src={pic}
+            />
+          </div>
           <h4 className="absolute right-0 top-[26rem] w-[35%] bg-black text-center text-[1.2rem] font-light text-white">
             <span className="decoration-clone p-[1rem] px-[1.5rem]">
               Hack & Roll 2019
@@ -27,7 +29,7 @@ const ProjectCard = () => {
             </ul>
           </h4>
         </div>
-        {/* <div className="backface-hidden absolute left-0 top-0 h-[30rem] w-full rotate-[180deg] transform rounded-[10px] shadow-[0_1.5rem_4rem_rgba(0,0,0,0.15)] transition-all duration-[800ms] ease-in-out hover:rotate-[rotateY(0)]">
+        <div className="backface-hidden absolute left-0 top-0 h-[30rem] w-full transform rounded-[10px] shadow-[0_1.5rem_4rem_rgba(0,0,0,0.15)] transition-all duration-[800ms] ease-in-out [transform:rotateY(180deg)] group-hover:[transform:rotateY(0)]">
           <div className="absolute left-1/2 top-1/2 h-[80%] w-[70%] -translate-x-1/2 -translate-y-1/2">
             <p>
               <SecondaryHeader text="Gyroscope Pong" type="dark" />
@@ -45,7 +47,7 @@ const ProjectCard = () => {
               GitHub Link
             </a>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );
