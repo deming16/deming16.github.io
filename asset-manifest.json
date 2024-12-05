@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/deming16.github.io/static/css/main.1b186816.css",
-    "main.js": "/deming16.github.io/static/js/main.19555b75.js",
-    "static/media/joinerproject.png": "/deming16.github.io/static/media/joinerproject.292269be29dd0a01abd3.png",
-    "static/media/modsuniproject.png": "/deming16.github.io/static/media/modsuniproject.663efbb03b36ffd5d5ad.png",
-    "static/media/about.jpg": "/deming16.github.io/static/media/about.ce3631a44d6394d69cab.jpg",
-    "static/media/highwayproject.jpeg": "/deming16.github.io/static/media/highwayproject.ce8a13498ee7e87ae1a2.jpeg",
-    "static/media/caroushareproject.png": "/deming16.github.io/static/media/caroushareproject.df445e557e66de21b5f6.png",
-    "static/media/pongproject.jpg": "/deming16.github.io/static/media/pongproject.c54632d2900083c15bf1.jpg",
-    "static/media/portfolioproject.png": "/deming16.github.io/static/media/portfolioproject.c96b401d5cb267274b98.png",
-    "index.html": "/deming16.github.io/index.html",
-    "main.1b186816.css.map": "/deming16.github.io/static/css/main.1b186816.css.map",
-    "main.19555b75.js.map": "/deming16.github.io/static/js/main.19555b75.js.map"
+    "main.css": "https://lindeming.com/static/css/main.1b186816.css",
+    "main.js": "https://lindeming.com/static/js/main.ad597705.js",
+    "static/media/joinerproject.png": "https://lindeming.com/static/media/joinerproject.292269be29dd0a01abd3.png",
+    "static/media/modsuniproject.png": "https://lindeming.com/static/media/modsuniproject.663efbb03b36ffd5d5ad.png",
+    "static/media/about.jpg": "https://lindeming.com/static/media/about.ce3631a44d6394d69cab.jpg",
+    "static/media/highwayproject.jpeg": "https://lindeming.com/static/media/highwayproject.ce8a13498ee7e87ae1a2.jpeg",
+    "static/media/caroushareproject.png": "https://lindeming.com/static/media/caroushareproject.df445e557e66de21b5f6.png",
+    "static/media/pongproject.jpg": "https://lindeming.com/static/media/pongproject.c54632d2900083c15bf1.jpg",
+    "static/media/portfolioproject.png": "https://lindeming.com/static/media/portfolioproject.c96b401d5cb267274b98.png",
+    "index.html": "https://lindeming.com/index.html",
+    "main.1b186816.css.map": "https://lindeming.com/static/css/main.1b186816.css.map",
+    "main.ad597705.js.map": "https://lindeming.com/static/js/main.ad597705.js.map"
   },
   "entrypoints": [
     "static/css/main.1b186816.css",
-    "static/js/main.19555b75.js"
+    "static/js/main.ad597705.js"
   ]
 }
