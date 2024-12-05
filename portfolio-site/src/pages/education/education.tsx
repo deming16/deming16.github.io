@@ -1,5 +1,6 @@
 import ProjectCard from "../../components/ProjectCard";
 import SecondaryHeader from "../../components/SecondaryHeader";
+import { PROJECT_DETAILS } from "../../constants/project";
 
 const Education = () => {
   return (
@@ -24,12 +25,10 @@ const Education = () => {
         </div>
 
         <div className="text-5xl">Projects</div>
-        <div className="grid grid-cols-3 gap-4">
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+        <div className="mx-auto grid grid-cols-1 justify-center gap-4">
+          {PROJECT_DETAILS.map((project) => (
+            <ProjectCard details={project} />
+          ))}
         </div>
       </div>
     </>
