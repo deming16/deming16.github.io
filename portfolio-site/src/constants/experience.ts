@@ -3,17 +3,31 @@ import { ExperienceDetail } from "../typings/common";
 export const EXPERIENCE_DETAILS: ExperienceDetail[] = [
   {
     title: "Software Engineer",
-    company: "Govtech DESAID",
+    company: "TikTok",
     location: "Singapore",
-    description:
-      "I worked on the Trusted Centre for Sensor Data's frontend platform",
-    date: "Jun 2019 - PRESENT",
+    description: "I worked on TikTok Live’s Data Platform and AML Platform",
+    date: "Aug 2022 – Present",
     pointers: [
-      "Built geospatial and time-series visualisation feature for consumption data using MapboxGL, TileServerGL and React/Redux",
-      "Built the frontend for Team Access Requests and Recurrent Concierge Requests features using React/Redux",
-      "Wrote frontend integration and end-to-end tests using Cypress",
-      "Introduced parallelisation to frontend test suite using Cypress director service reducing run time by 100%",
-      "Planned and executed migration of UI library from Mui v4 to v5",
+      "Built a widget SDK and marketplace that improved data visualisation features time-to-delivery by 300%",
+      "Built core frontend components and promoted its usage to >100 engineers across multiple teams and products",
+      "Built API services that allow FE components to easily manage Lark credentials and documents using Node/Express",
+      "Built AML platform functions that helped alert financial investigators on suspicious behaviours (>100 monthly)",
+      "Achieved good stability and response rate on AML Platform by improving code culture and application monitoring",
+      "Promoted engineers’ growth by sharing and publishing wikis and articles on various projects and technologies",
+    ],
+  },
+  {
+    title: "Software Engineer",
+    company: "Govtech DSAID",
+    location: "Singapore",
+    description: "I worked on the Trusted Centre for Sensor Data platform",
+    date: "Jun 2021 – Jul 2022",
+    pointers: [
+      "Built a map visualisation platform that improved agencies ability to study trends and plan policies using MapboxGL",
+      "Improved data requests workflow by implementing Team and Recurrent Requests using React/Redux and Flask",
+      "Reduced regression bugs by achieving healthy frontend integration and end-to-end test coverage using Cypress",
+      "Introduced parallelisation to frontend test suite using Cypress director service reducing CI run time by 100%",
+      "Introduced parallelisation to frontend test suite using Cypress director service reducing CI run time by 100%",
       "Shared on various software engineering related topics during division level engineering sharing",
     ],
   },
@@ -33,23 +47,25 @@ export const EXPERIENCE_DETAILS: ExperienceDetail[] = [
     company: "Edison",
     location: "San Francisco Bay Area",
     description:
-      "I worked on UI features for Edison Mail macOS(Electron) app used by 1.5 million users worldwide",
-    date: "Sep 2020 - Dec 2020",
+      "I worked on Edison Mail macOS(Electron) app used by 1.5 million users worldwide",
+    date: "Jan 2020 – Dec 2020",
     pointers: [
-      "Implemented email account colors support for better email viewing experience",
-      "Redesigned and built in-app translation with i18n library to abstract codebase out for translators",
+      "Improved users (30%) scheduling workflow by building calendar app with offline support using React and SQLite",
+      "Improved responsiveness (>1sec) by implementing asynchronous calendar operations using Redux Observables",
+      "Built support for sync with users’ personal calendar provider using Caldav and Google Calendar API",
     ],
   },
   {
-    title: "Software Engineer Intern",
+    title: "Backend Engineer Intern",
     company: "NodeFlair",
     location: "Singapore",
     description:
-      "I worked on features allowing companies to manage and bridge communication with tech talents",
-    date: "May 2019 - Jan 2020",
+      "I worked on the talent platform which connects companies and tech talents",
+    date: "May 2019 – Jan 2020",
     pointers: [
-      "Implemented backend APIs for the new talent management page using Ruby on Rails and PostgreSQL",
-      "Enabled real-time in-app chat between companies and tech talents using Rails Action Cable",
+      "Increased match-to-hire conversion rate (20%) by overhauling talent dashboard service using Rails and PostgreSQL",
+      "Improved recruiter-talent interaction experience by implementing real-time chat using Rails Action Cable",
+      "Reduced AWS spendings by 50% by migrating from managed service (Beanstalk) to serverless service (Lambda)",
     ],
   },
   {
@@ -58,7 +74,7 @@ export const EXPERIENCE_DETAILS: ExperienceDetail[] = [
     location: "Singapore",
     description:
       "Served as instructor for Full Stack Web Development and Git workshops",
-    date: "May 2019 - July 2019",
+    date: "May 2019 - Jul 2019",
     pointers: [
       "Debugged issues faced by students",
       "Helped students to better understand concepts in web development",
