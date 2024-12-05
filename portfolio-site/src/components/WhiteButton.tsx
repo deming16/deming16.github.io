@@ -4,14 +4,15 @@ import BaseButton from "./BaseButton";
 type Props = {
   text: ReactNode;
   classes?: string;
+  onClick?: () => void;
 };
 
-const WhiteButton = ({ text, classes = "" }: Props) => {
+const WhiteButton = ({ text, classes = "", onClick }: Props) => {
   return (
     <BaseButton
       text={text}
       btnStyle={`bg-white text-gray-800 after:bg-white ${classes}`}
-      insetStyle="absolute inset-0 bg-white"
+      onClick={onClick}
     />
   );
 };

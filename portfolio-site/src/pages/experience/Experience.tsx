@@ -9,9 +9,13 @@ const Experience = () => {
         <SecondaryHeader text="Experience" type="dark" />
       </div>
 
-      <div className="mx-auto grid max-w-[114rem]">
+      <div className="mx-auto grid max-w-[40rem] sm:max-w-[70rem] md:max-w-[80rem] lg:max-w-[100rem] xl:max-w-[114rem]">
         {EXPERIENCE_DETAILS.map((details) => {
-          return <ExperienceCard details={details} />;
+          return (
+            <div key={details.date}>
+              <ExperienceCard details={details} />
+            </div>
+          );
         })}
       </div>
     </section>

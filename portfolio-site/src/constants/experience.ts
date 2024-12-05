@@ -15,6 +15,7 @@ export const EXPERIENCE_DETAILS: ExperienceDetail[] = [
       "Achieved good stability and response rate on AML Platform by improving code culture and application monitoring",
       "Promoted engineers’ growth by sharing and publishing wikis and articles on various projects and technologies",
     ],
+    techStack: ["TypeScript", "React", "Node/Express"]
   },
   {
     title: "Software Engineer",
@@ -27,9 +28,10 @@ export const EXPERIENCE_DETAILS: ExperienceDetail[] = [
       "Improved data requests workflow by implementing Team and Recurrent Requests using React/Redux and Flask",
       "Reduced regression bugs by achieving healthy frontend integration and end-to-end test coverage using Cypress",
       "Introduced parallelisation to frontend test suite using Cypress director service reducing CI run time by 100%",
-      "Introduced parallelisation to frontend test suite using Cypress director service reducing CI run time by 100%",
+      "Migrated UI library and CSS-in-JS solution which improved developer experience and rendering performance",
       "Shared on various software engineering related topics during division level engineering sharing",
     ],
+    techStack: ["TypeScript", "React", "Flask", "Docker", "Azure"]
   },
   {
     title: "Software Developer (Freelance)",
@@ -41,6 +43,8 @@ export const EXPERIENCE_DETAILS: ExperienceDetail[] = [
       "Implemented frontend dashboard and forms for upcoming beta launch using Nextjs",
       "Wrote basic UI test cases using Jest and React Testing Library",
     ],
+    techStack: ["TypeScript", "Next.js", "Node/Express"]
+
   },
   {
     title: "Software Engineer Intern",
@@ -54,6 +58,7 @@ export const EXPERIENCE_DETAILS: ExperienceDetail[] = [
       "Improved responsiveness (>1sec) by implementing asynchronous calendar operations using Redux Observables",
       "Built support for sync with users’ personal calendar provider using Caldav and Google Calendar API",
     ],
+    techStack: ["TypeScript", "React", "SQLite", "Electron" ]
   },
   {
     title: "Backend Engineer Intern",
@@ -67,6 +72,7 @@ export const EXPERIENCE_DETAILS: ExperienceDetail[] = [
       "Improved recruiter-talent interaction experience by implementing real-time chat using Rails Action Cable",
       "Reduced AWS spendings by 50% by migrating from managed service (Beanstalk) to serverless service (Lambda)",
     ],
+    techStack: ["Ruby on Rails", "PostgreSQL" ]
   },
   {
     title: "Web Development Instructor",
@@ -80,5 +86,6 @@ export const EXPERIENCE_DETAILS: ExperienceDetail[] = [
       "Helped students to better understand concepts in web development",
       "Provided tips to students on web development",
     ],
+    techStack: ["TypeScript", "React", "Node/Express"]
   },
 ];

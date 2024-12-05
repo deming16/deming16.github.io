@@ -8,28 +8,26 @@ const Skills = () => {
         <SecondaryHeader text="Skills" type="light" />
       </div>
 
-      <div className="mx-auto grid max-w-[114rem] grid-cols-2 gap-4">
+      <div className="mx-auto grid max-w-[40rem] grid-cols-1 gap-10 sm:max-w-[70rem] md:max-w-[80rem] md:grid-cols-2 lg:max-w-[100rem] xl:max-w-[114rem]">
         <SkillBox
-          icon={<span className="devicon-java-plain mb-2 text-[6rem]" />}
+          icon={<span className="devicon-java-plain mb-2 text-[4rem]" />}
           header={"Languages/Frameworks"}
-          current={
-            <>
-              <b>Currently Using:</b> TypeScript · React/Redux · Cypress ·
-              MapboxGL · Node/Express
-            </>
-          }
-          previous={
-            <>
-              <b>Previously Used:</b> PostgreSQL/Sequelize · Ruby on Rails ·
-              Python · Flutter · Unity/C#
-            </>
-          }
+          current={["TypeScript", "React", "Jest/Cypress", "Node.js"]}
+          previous={[
+            "Java",
+            "Python/Flask",
+            "Ruby on Rails",
+            "PostgreSQL",
+            "Flutter",
+            "Unity/C#",
+            "Electron",
+          ]}
         />
         <SkillBox
-          icon={<span className="devicon-git-plain mb-2 text-[6rem]" />}
+          icon={<span className="devicon-git-plain mb-2 text-[4rem]" />}
           header={"Technologies"}
-          current={<>Git/GitHub · Docker · Microsoft Azure</>}
-          previous={<>AWS · Electron</>}
+          current={["Git", "AWS"]}
+          previous={["Docker", "Azure", "MongoDB"]}
         />
       </div>
     </section>

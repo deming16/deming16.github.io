@@ -7,7 +7,7 @@ const NavigationIcon = ({ isShow }: { isShow: boolean }) => {
       className={`group fixed right-[6rem] top-[6rem] z-[2000] h-[7rem] w-[7rem] cursor-pointer rounded-full bg-white text-center shadow-[0_1rem_3rem_rgba(0,0,0,0.1)]`}
     >
       <span
-        className={`relative mt-[3.5rem] inline-block h-[2px] w-[3rem] bg-[#333] before:absolute before:left-0 before:inline-block before:h-[2px] before:w-[3rem] before:bg-[#333] before:transition-all before:duration-200 after:absolute after:left-0 after:inline-block after:h-[2px] after:w-[3rem] after:bg-[#333] after:transition-all after:duration-200 ${isShow ? "bg-transparent before:top-0 before:rotate-[135deg] after:top-0 after:rotate-[-135deg]" : "before:top-[-0.8rem] after:top-[0.8rem] group-hover:before:top-[-1rem] group-hover:after:top-[1rem]"} `}
+        className={`relative mt-[3.5rem] inline-block h-[2px] w-[3rem] bg-[#333] before:absolute before:left-0 before:inline-block before:h-[2px] before:w-[3rem] before:bg-[#333] before:transition-all before:duration-200 after:absolute after:left-0 after:inline-block after:h-[1px] after:w-[3rem] after:bg-[#333] after:transition-all after:duration-200 ${isShow ? "bg-transparent before:top-0 before:rotate-[135deg] after:top-0 after:rotate-[-135deg]" : "before:top-[-0.8rem] after:top-[0.8rem] group-hover:before:top-[-1rem] group-hover:after:top-[1rem]"} `}
       >
         &nbsp;
       </span>

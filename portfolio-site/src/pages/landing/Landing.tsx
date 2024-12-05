@@ -3,6 +3,27 @@ import WhiteButton from "../../components/WhiteButton";
 import { faCloud } from "@fortawesome/free-solid-svg-icons";
 
 const Landing = () => {
+  const openPDF = () => {
+    const pdfWindow = window.open("Lin_Deming.pdf");
+    const title = "Deming Lin - Online Resume";
+    const URI = "Lin_Deming.pdf";
+    const html = `
+      <html>
+        <head>
+          <title>${title}</title>
+          <link rel="icon" href=${process.env.PUBLIC_URL + "/icon.png"} />
+        </head>
+        <body style="margin:0">
+          <embed width="100%" height="100%" src=${process.env.PUBLIC_URL + "/Lin_Deming.pdf"} type="application/pdf">
+        </body>
+      </html>
+    `;
+
+    pdfWindow?.document.write(html);
+    pdfWindow?.document.close();
+    pdfWindow?.history.pushState(null, "", URI);
+  };
+
   return (
     <header
       id="home"
@@ -22,6 +43,7 @@ const Landing = () => {
 
         <WhiteButton
           classes="animate-moveInBottom"
+          onClick={openPDF}
           text={
             <>
               <FontAwesomeIcon icon={faCloud} /> Resume
