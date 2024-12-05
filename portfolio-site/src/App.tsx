@@ -27,6 +27,9 @@ function App() {
       <div>
         <Education />
       </div>
+      <div className="mt-40 h-[4rem] bg-black text-center text-white">
+        2017 - 2024 Deming Lin
+      </div>
     </div>
   );
 }

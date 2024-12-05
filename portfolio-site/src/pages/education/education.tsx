@@ -5,7 +5,10 @@ import { PROJECT_DETAILS } from "../../constants/project";
 const Education = () => {
   return (
     <>
-      <div id="education" className="wow fadeInUp mx-auto grid max-w-[114rem]">
+      <div
+        id="education"
+        className="wow fadeInUp mx-auto grid max-w-[40rem] md:max-w-[85rem] lg:max-w-[114rem]"
+      >
         <div className="wow fadeInUp mb-20 mt-20 text-center">
           <SecondaryHeader text="Education" type="dark" />
         </div>
@@ -24,8 +27,8 @@ const Education = () => {
           Operating Systems
         </div>
 
-        <div className="text-5xl">Projects</div>
-        <div className="mx-auto grid grid-cols-1 justify-center gap-4">
+        <div className="mt-10 text-5xl">Projects</div>
+        <div className="mt-10 grid grid-cols-1 justify-center gap-y-20 md:grid-cols-2 min-[1280px]:grid-cols-3 min-[1280px]:gap-x-96">
           {PROJECT_DETAILS.map((project) => (
             <ProjectCard details={project} />
           ))}
