@@ -11,7 +11,7 @@ const WhiteButton = ({ text, classes = "", onClick }: Props) => {
   return (
     <BaseButton
       text={text}
-      btnStyle={`bg-white text-gray-800 after:bg-white ${classes}`}
+      btnStyle={`bg-white text-gray-800 after:bg-white dark:bg-slate-700 dark:text-white dark:after:bg-slate-700 ${classes}`}
       onClick={onClick}
     />
   );

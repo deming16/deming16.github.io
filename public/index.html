@@ -13,6 +13,22 @@
       name="description"
       content="Deming Resume"
     />
+    <script>
+      (function () {
+        try {
+          var savedTheme = localStorage.getItem("theme");
+          var prefersDark =
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches;
+          var theme = savedTheme || (prefersDark ? "dark" : "light");
+
+          if (theme === "dark") {
+            document.documentElement.classList.add("dark");
+            document.documentElement.style.backgroundColor = "#000";
+          }
+        } catch (error) {}
+      })();
+    </script>
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/

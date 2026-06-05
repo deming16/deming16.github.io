@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "bytedance-mcp-overpass": {
+      "type": "stdio",
+      "command": "bunx",
+      "args": ["@byted/mcp-proxy@latest"],
+      "env": {
+        "BUN_CONFIG_REGISTRY": "https://bnpm.byted.org",
+        "MCP_SERVER_PSM": "bytedance.mcp.overpass",
+        "MCP_GATEWAY_REGION": "I18N"
+      }
+    },
+    "browsermcp": {
+      "command": "npx",
+      "args": ["@browsermcp/mcp@latest"]
+    }
+  }
+}

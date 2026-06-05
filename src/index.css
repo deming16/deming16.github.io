@@ -2,6 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Theme Variables */
+:root {
+  --color-primary: #2e3830;
+  --color-bg-light: #f7f7f7;
+  --color-bg-dark: #0f172a;
+  --color-text-light: #777;
+  --color-text-dark: #94a3b8;
+}
+
+/* Smooth color transition for dark mode */
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark {
+  color-scheme: dark;
+  background-color: #000;
+}
+
+body,
+#root {
+  min-height: 100vh;
+}
+
+body {
+  background-color: var(--color-bg-light);
+}
+
+html.dark body {
+  background-color: #000;
+}
+
 @layer components {
   @charset "UTF-8";
 
