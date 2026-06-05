@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "https://lindeming.com/static/css/main.f3d6cf69.css",
-    "main.js": "https://lindeming.com/static/js/main.e650e0b4.js",
+    "main.css": "https://lindeming.com/static/css/main.0edb987d.css",
+    "main.js": "https://lindeming.com/static/js/main.b402c5b7.js",
     "static/media/joinerproject.png": "https://lindeming.com/static/media/joinerproject.292269be29dd0a01abd3.png",
     "static/media/modsuniproject.png": "https://lindeming.com/static/media/modsuniproject.663efbb03b36ffd5d5ad.png",
     "static/media/about.jpg": "https://lindeming.com/static/media/about.ce3631a44d6394d69cab.jpg",
@@ -12,11 +12,11 @@
     "static/media/pongproject.jpg": "https://lindeming.com/static/media/pongproject.c54632d2900083c15bf1.jpg",
     "static/media/portfolioproject.png": "https://lindeming.com/static/media/portfolioproject.c96b401d5cb267274b98.png",
     "index.html": "https://lindeming.com/index.html",
-    "main.f3d6cf69.css.map": "https://lindeming.com/static/css/main.f3d6cf69.css.map",
-    "main.e650e0b4.js.map": "https://lindeming.com/static/js/main.e650e0b4.js.map"
+    "main.0edb987d.css.map": "https://lindeming.com/static/css/main.0edb987d.css.map",
+    "main.b402c5b7.js.map": "https://lindeming.com/static/js/main.b402c5b7.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3d6cf69.css",
-    "static/js/main.e650e0b4.js"
+    "static/css/main.0edb987d.css",
+    "static/js/main.b402c5b7.js"
   ]
 }
