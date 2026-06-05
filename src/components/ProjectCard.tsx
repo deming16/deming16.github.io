@@ -9,10 +9,10 @@ const ProjectCard = ({ details }: Props) => {
 
   const content = (
     <div
-      className={`group flex h-full flex-col overflow-hidden rounded-2xl bg-white transition-all duration-300 hover:scale-[1.02] hover:bg-yellow-300 dark:bg-slate-800/50 dark:hover:bg-yellow-300 dark:shadow-none ${link ? "cursor-pointer" : ""}`}
+      className={`group flex h-full flex-col overflow-hidden rounded-2xl bg-brand-light-surface transition-all duration-300 hover:scale-[1.02] hover:bg-brand-light-muted dark:bg-slate-800/50 dark:hover:bg-yellow-300 dark:shadow-none ${link ? "cursor-pointer" : ""}`}
       style={{ boxShadow: "0 22px 60px rgba(15, 23, 42, 0.12)", transformOrigin: "center" }}
     >
-      <div className="aspect-[695/494] w-full overflow-hidden bg-slate-100 transition-colors duration-300 group-hover:bg-yellow-300 dark:bg-slate-900 dark:group-hover:bg-yellow-300">
+      <div className="aspect-[695/494] w-full overflow-hidden bg-brand-light-muted transition-colors duration-300 group-hover:bg-brand-light-border dark:bg-slate-900 dark:group-hover:bg-yellow-300">
         <img
           src={thumbnail}
           alt={`${title} preview`}
@@ -26,13 +26,13 @@ const ProjectCard = ({ details }: Props) => {
           style={{ marginBottom: "2rem" }}
         >
           <h3
-            className="font-semibold leading-tight text-slate-900 transition-colors duration-300 group-hover:text-slate-950 dark:text-white dark:group-hover:text-slate-950"
+            className="font-semibold leading-tight text-brand-light-text transition-colors duration-300 group-hover:text-brand-light-text dark:text-white dark:group-hover:text-slate-950"
             style={{ fontSize: "3.5rem" }}
           >
             {title}
           </h3>
           <span
-            className="shrink-0 font-medium text-slate-400 transition-colors duration-300 group-hover:text-slate-800 dark:text-slate-400 dark:group-hover:text-slate-800"
+            className="shrink-0 font-medium text-brand-light-accent transition-colors duration-300 group-hover:text-brand-light-text dark:text-slate-400 dark:group-hover:text-slate-800"
             style={{ fontSize: "1.4rem" }}
           >
             {date}
@@ -41,7 +41,7 @@ const ProjectCard = ({ details }: Props) => {
 
         {description && (
           <p
-            className="text-slate-600 transition-colors duration-300 group-hover:text-slate-900 dark:text-slate-300 dark:group-hover:text-slate-900"
+            className="text-brand-light-body transition-colors duration-300 group-hover:text-brand-light-text dark:text-slate-300 dark:group-hover:text-slate-900"
             style={{ marginBottom: "2rem", fontSize: "1.4rem", lineHeight: 1.8 }}
           >
             {description}
@@ -52,7 +52,7 @@ const ProjectCard = ({ details }: Props) => {
           {pointers.map((pointer, index) => (
             <li
               key={index}
-              className="text-slate-600 transition-colors duration-300 group-hover:text-slate-900 dark:text-slate-300 dark:group-hover:text-slate-900"
+              className="text-brand-light-body transition-colors duration-300 group-hover:text-brand-light-text dark:text-slate-300 dark:group-hover:text-slate-900"
               style={{ fontSize: "1.4rem", lineHeight: 1.8 }}
             >
               {pointer}
@@ -64,7 +64,7 @@ const ProjectCard = ({ details }: Props) => {
           {techStack.map((stack) => (
             <span
               key={stack}
-              className="rounded-full bg-[#f8eedc] font-semibold text-[#c47a1d] transition-colors duration-300 group-hover:bg-slate-900 group-hover:text-amber-300 dark:bg-[#2b3348] dark:text-[#f0c550] dark:group-hover:bg-slate-900 dark:group-hover:text-amber-300"
+              className="rounded-full bg-brand-light-page font-semibold text-brand-light-accent transition-colors duration-300 group-hover:bg-brand-light-text group-hover:text-brand-light-page dark:bg-[#2b3348] dark:text-[#f0c550] dark:group-hover:bg-slate-900 dark:group-hover:text-amber-300"
               style={{ padding: "0.5rem 1rem", fontSize: "1rem" }}
             >
               {stack}

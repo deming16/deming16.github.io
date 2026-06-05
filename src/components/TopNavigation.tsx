@@ -13,8 +13,8 @@ const navItems = [
 const linkClasses = ({ isActive }: { isActive: boolean }) =>
   `font-medium transition-colors duration-200 ${
     isActive
-      ? "text-amber-500 dark:text-amber-400"
-      : "text-slate-400 hover:text-slate-600 dark:text-slate-500 dark:hover:text-slate-300"
+      ? "text-brand-light-text dark:text-amber-400"
+      : "text-brand-light-body hover:text-brand-light-text dark:text-slate-500 dark:hover:text-slate-300"
   }`;
 
 const TopNavigation = () => {
@@ -63,7 +63,7 @@ const TopNavigation = () => {
   }, [showHamburger]);
 
   return (
-    <header className="fixed left-0 right-0 top-0 z-50 bg-white shadow-sm dark:bg-black">
+    <header className="fixed left-0 right-0 top-0 z-50 bg-brand-light-page/95 shadow-sm shadow-black/10 backdrop-blur dark:bg-black">
       <nav
         ref={navRef}
         className="mx-auto flex max-w-[1100px] items-center justify-between"
@@ -93,7 +93,7 @@ const TopNavigation = () => {
           {showHamburger && (
             <button
               type="button"
-              className="flex h-16 w-16 items-center justify-center rounded-full bg-slate-100 text-slate-700 transition-all duration-300 hover:bg-slate-200 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700"
+              className="flex h-16 w-16 items-center justify-center rounded-full border border-brand-light-border bg-brand-light-surface text-brand-light-text transition-all duration-300 hover:bg-brand-light-muted dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700"
               aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
               aria-expanded={isMenuOpen}
               aria-controls="mobile-navigation-menu"
@@ -109,12 +109,12 @@ const TopNavigation = () => {
         </div>
       </nav>
 
-      <div className="h-px w-full bg-slate-200 dark:bg-slate-700" />
+      <div className="h-px w-full bg-brand-light-border dark:bg-slate-700" />
 
       {showHamburger && isMenuOpen && (
         <div
           id="mobile-navigation-menu"
-          className="border-b border-slate-200 bg-white dark:border-slate-800 dark:bg-black"
+          className="border-b border-brand-light-border bg-brand-light-page dark:border-slate-800 dark:bg-black"
         >
           <div className="mx-auto max-w-[1100px] px-10 py-8">
             <ul className="grid gap-3">
@@ -122,7 +122,7 @@ const TopNavigation = () => {
                 <li key={item.path}>
                   <NavLink
                     to={item.path}
-                    className={`${linkClasses} block rounded-xl px-5 py-4 hover:bg-slate-100 dark:hover:bg-slate-950`}
+                    className={`${linkClasses} block rounded-xl px-5 py-4 hover:bg-brand-light-surface dark:hover:bg-slate-950`}
                     style={{ fontSize: "1.35rem", letterSpacing: "0.1em" }}
                   >
                     {item.label}

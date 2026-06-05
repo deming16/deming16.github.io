@@ -4,7 +4,7 @@ import { PROJECT_DETAILS } from "../../constants/project";
 
 const Projects = () => {
   return (
-    <div className="min-h-screen bg-slate-50 pb-32 dark:bg-black">
+    <div className="min-h-screen bg-brand-light-page pb-32 dark:bg-black">
       <div
         className="mx-auto"
         style={{ maxWidth: "1500px", padding: "6rem 2rem" }}

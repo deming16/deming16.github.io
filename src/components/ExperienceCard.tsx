@@ -22,7 +22,7 @@ const ExperienceCard = ({ details }: Props) => {
   return (
     <article>
       <div
-        className="rounded-2xl bg-white transition-all duration-300 dark:bg-slate-800/50 dark:shadow-none"
+        className="rounded-2xl bg-brand-light-surface transition-all duration-300 dark:bg-slate-800/50 dark:shadow-none"
         style={{
           padding: "3.5rem",
           boxShadow: "0 18px 48px rgba(15, 23, 42, 0.12)",
@@ -34,20 +34,20 @@ const ExperienceCard = ({ details }: Props) => {
         >
           <div className="min-w-0">
             <h3
-              className="font-semibold leading-tight text-slate-900 dark:text-white"
+              className="font-semibold leading-tight text-brand-light-text dark:text-white"
               style={{ fontSize: "3.5rem" }}
             >
               {title}
             </h3>
             <p
-              className="font-semibold text-[#d29b12] dark:text-yellow-300"
+              className="font-semibold text-brand-light-accent dark:text-yellow-300"
               style={{ marginTop: "0.75rem", fontSize: "2.25rem" }}
             >
               {company}
             </p>
             {description && (
               <p
-                className="text-slate-500 dark:text-slate-400"
+                className="text-brand-light-body dark:text-slate-400"
                 style={{ marginTop: "0.75rem", fontSize: "1.4rem", lineHeight: 1.8 }}
               >
                 {description}
@@ -55,7 +55,7 @@ const ExperienceCard = ({ details }: Props) => {
             )}
           </div>
           <span
-            className="shrink-0 font-semibold tracking-[0.02em] text-[#d29b12] dark:text-yellow-300"
+            className="shrink-0 font-semibold tracking-[0.02em] text-brand-light-accent dark:text-yellow-300"
             style={{ fontSize: "1.25rem" }}
           >
             {[date, location].filter(Boolean).join(" • ")}
@@ -66,7 +66,7 @@ const ExperienceCard = ({ details }: Props) => {
           {pointers.map((pointer, index) => (
             <li
               key={index}
-              className="text-slate-600 dark:text-slate-300"
+              className="text-brand-light-body dark:text-slate-300"
               style={{ fontSize: "1.4rem", lineHeight: 1.8 }}
             >
               {pointer}
@@ -78,7 +78,7 @@ const ExperienceCard = ({ details }: Props) => {
           {techStack.map((stack) => (
             <span
               key={stack}
-              className="rounded-full bg-[#f8eedc] font-semibold text-[#c47a1d] dark:bg-[#2b3348] dark:text-[#f0c550]"
+              className="rounded-full bg-brand-light-page font-semibold text-brand-light-accent dark:bg-[#2b3348] dark:text-[#f0c550]"
               style={{ padding: "0.5rem 1rem", fontSize: "1rem" }}
             >
               {stack}
@@ -89,7 +89,7 @@ const ExperienceCard = ({ details }: Props) => {
         {bottomImages?.length ? (
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             {bottomImages.map(({ src, alt }) => (
-              <div key={src} className="flex-1 overflow-hidden rounded-2xl bg-slate-100 p-3 dark:bg-slate-900">
+              <div key={src} className="flex-1 overflow-hidden rounded-2xl bg-brand-light-muted p-3 dark:bg-slate-900">
                 <img src={src} alt={alt} className="h-auto w-full rounded-xl object-contain" />
               </div>
             ))}

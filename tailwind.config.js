@@ -60,6 +60,17 @@ module.exports = {
           dark: "#22c55e",
         },
         cream: "#e3d7c4",
+        brand: {
+          light: {
+            page: "#f6e7b8",
+            surface: "#fbf2d6",
+            muted: "#efe1b5",
+            text: "#17120b",
+            body: "#3f3320",
+            accent: "#af6f12",
+            border: "#cfb36a",
+          },
+        },
       },
       spacing: {
         "4rem": "4rem",

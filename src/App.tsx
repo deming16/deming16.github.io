@@ -45,7 +45,7 @@ function App() {
     <ThemeProvider>
       <BrowserRouter>
         <div
-          className="min-h-screen bg-slate-50 font-roboto font-normal text-slate-600 dark:bg-black dark:text-slate-300"
+          className="min-h-screen bg-brand-light-page font-roboto font-normal text-brand-light-body dark:bg-black dark:text-slate-300"
           style={{ fontSize: "1.75rem", lineHeight: 1.7 }}
         >
           <TopNavigation />

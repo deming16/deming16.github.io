@@ -6,21 +6,21 @@ import SlideInOnLoad from "../../components/SlideInOnLoad";
 
 const Home = () => {
   return (
-    <div className="flex min-h-screen items-center bg-slate-50 dark:bg-black">
+    <div className="flex min-h-screen items-center bg-brand-light-page dark:bg-black">
       <div
         className="mx-auto flex w-full flex-col items-center justify-center gap-10 lg:flex-row lg:items-center lg:justify-center"
         style={{ maxWidth: "1400px", padding: "2rem 3.5rem" }}
       >
         <SlideInOnLoad direction="left" className="max-w-5xl flex-1">
           <h1
-            className="font-bold text-yellow-400 dark:text-yellow-300"
+            className="font-bold text-brand-light-text dark:text-yellow-300"
             style={{ marginBottom: "2rem", fontSize: "8.5rem" }}
           >
             Deming Lin
           </h1>
 
           <p
-            className="text-slate-700 dark:text-slate-300"
+            className="text-brand-light-body dark:text-slate-300"
             style={{
               marginBottom: "3.75rem",
               maxWidth: "72rem",
@@ -37,7 +37,7 @@ const Home = () => {
           <div className="flex flex-wrap items-center gap-10">
             <a
               href="/Lin_Deming.pdf"
-              className="inline-flex items-center gap-4 rounded-2xl bg-yellow-400 px-10 py-5 text-2xl font-semibold text-black shadow-lg shadow-yellow-400/30 transition-all hover:-translate-y-0.5 hover:bg-yellow-300 dark:bg-yellow-300 dark:text-black dark:hover:bg-yellow-200"
+              className="inline-flex items-center gap-4 rounded-2xl bg-brand-light-text px-10 py-5 text-2xl font-semibold text-brand-light-page shadow-lg shadow-black/20 transition-all hover:-translate-y-0.5 hover:bg-brand-light-body dark:bg-yellow-300 dark:text-black dark:hover:bg-yellow-200"
             >
               <FontAwesomeIcon icon={faDownload} />
               Download Resume
@@ -46,7 +46,7 @@ const Home = () => {
               href="https://github.com/deming16"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-700 transition-colors hover:text-slate-900 dark:text-slate-400 dark:hover:text-white"
+              className="text-brand-light-body transition-colors hover:text-brand-light-text dark:text-slate-400 dark:hover:text-white"
             >
               <FontAwesomeIcon icon={faGithub} style={{ fontSize: "2.4rem" }} />
             </a>
@@ -54,7 +54,7 @@ const Home = () => {
               href="https://www.linkedin.com/in/lindeming"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-700 transition-colors hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400"
+              className="text-brand-light-body transition-colors hover:text-brand-light-accent dark:text-slate-400 dark:hover:text-blue-400"
             >
               <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: "2.4rem" }} />
             </a>
@@ -65,7 +65,7 @@ const Home = () => {
           <img
             src={aboutImage}
             alt="Deming Lin"
-            className="h-[30rem] w-[30rem] rounded-3xl object-cover shadow-2xl ring-1 ring-slate-200 dark:ring-slate-800 lg:h-[38rem] lg:w-[34rem]"
+            className="h-[30rem] w-[30rem] rounded-3xl object-cover shadow-2xl ring-2 ring-black/10 dark:ring-slate-800 lg:h-[38rem] lg:w-[34rem]"
           />
         </SlideInOnLoad>
       </div>

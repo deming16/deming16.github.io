@@ -4,7 +4,7 @@ import { EXPERIENCE_DETAILS } from "../../constants/experience";
 
 const Experience = () => {
   return (
-    <section className="min-h-screen bg-[#f8fafc] transition-colors duration-300 dark:bg-black">
+    <section className="min-h-screen bg-brand-light-page transition-colors duration-300 dark:bg-black">
       <div
         className="mx-auto"
         style={{ maxWidth: "1280px", padding: "6rem 2.5rem" }}

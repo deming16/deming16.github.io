@@ -72,7 +72,7 @@ const educationCards = [
 
 const Education = () => {
   return (
-    <section className="min-h-screen bg-[#f8fafc] transition-colors duration-300 dark:bg-black">
+    <section className="min-h-screen bg-brand-light-page transition-colors duration-300 dark:bg-black">
       <div
         className="mx-auto"
         style={{ maxWidth: "1100px", padding: "6rem 2.5rem" }}
@@ -83,7 +83,7 @@ const Education = () => {
               {certifications.map((certification) => (
                 <article
                   key={certification.href}
-                  className="flex min-w-[280px] flex-1 bg-white dark:bg-slate-800/50"
+                  className="flex min-w-[280px] flex-1 bg-brand-light-surface dark:bg-slate-800/50"
                   style={{
                     padding: "2.25rem 2.5rem",
                     borderRadius: "1.5rem",
@@ -93,7 +93,7 @@ const Education = () => {
                   <div className="min-w-0">
                     <div style={{ marginBottom: "1.5rem" }}>
                       <span
-                        className="inline-block rounded-full bg-[#f8eedc] font-semibold text-[#c47a1d] dark:bg-[#2b3348] dark:text-[#f0c550]"
+                        className="inline-block rounded-full bg-brand-light-page font-semibold text-brand-light-accent dark:bg-[#2b3348] dark:text-[#f0c550]"
                         style={{ padding: "0.5rem 1rem", fontSize: "1rem" }}
                       >
                         Certification
@@ -101,25 +101,25 @@ const Education = () => {
                     </div>
 
                     <h3
-                      className="font-semibold leading-tight text-slate-900 dark:text-white"
+                      className="font-semibold leading-tight text-brand-light-text dark:text-white"
                       style={{ fontSize: "2rem" }}
                     >
                       {certification.title}
                     </h3>
                     <p
-                      className="text-slate-700 dark:text-slate-200"
+                      className="text-brand-light-body dark:text-slate-200"
                       style={{ marginTop: "0.35rem", fontSize: "1.45rem", lineHeight: 1.6 }}
                     >
                       {certification.issuer}
                     </p>
                     <p
-                      className="text-slate-500 dark:text-slate-400"
+                      className="text-brand-light-body dark:text-slate-400"
                       style={{ marginTop: "0.35rem", fontSize: "1.3rem", lineHeight: 1.6 }}
                     >
                       {certification.issued}
                     </p>
                     <p
-                      className="text-slate-500 dark:text-slate-400"
+                      className="text-brand-light-body dark:text-slate-400"
                       style={{ marginTop: "0.15rem", fontSize: "1.3rem", lineHeight: 1.6 }}
                     >
                       {certification.credentialId}
@@ -128,7 +128,7 @@ const Education = () => {
                       href={certification.href}
                       target="_blank"
                       rel="noreferrer"
-                      className="mt-6 inline-flex items-center rounded-full border border-slate-700 px-6 py-3 font-semibold text-slate-700 transition-colors duration-300 hover:bg-slate-100 dark:border-slate-200 dark:text-slate-100 dark:hover:bg-slate-700"
+                      className="mt-6 inline-flex items-center rounded-full border border-brand-light-text px-6 py-3 font-semibold text-brand-light-text transition-colors duration-300 hover:bg-brand-light-text hover:text-brand-light-page dark:border-slate-200 dark:text-slate-100 dark:hover:bg-slate-700"
                       style={{ fontSize: "1.25rem", gap: "0.5rem" }}
                     >
                       Show credential
@@ -142,7 +142,7 @@ const Education = () => {
             {educationCards.map((card, index) => (
               <article key={`${card.school}-${card.meta}`}>
                 <div
-                  className="flex h-full flex-col rounded-2xl bg-white transition-all duration-300 dark:bg-slate-800/50 dark:shadow-none"
+                  className="flex h-full flex-col rounded-2xl bg-brand-light-surface transition-all duration-300 dark:bg-slate-800/50 dark:shadow-none"
                   style={{
                     padding: "3.5rem",
                     boxShadow: "0 18px 48px rgba(15, 23, 42, 0.12)",
@@ -150,7 +150,7 @@ const Education = () => {
                 >
                   <div style={{ marginBottom: "2rem" }}>
                     <span
-                      className="inline-block rounded-full bg-[#f8eedc] font-semibold text-[#c47a1d] dark:bg-[#2b3348] dark:text-[#f0c550]"
+                      className="inline-block rounded-full bg-brand-light-page font-semibold text-brand-light-accent dark:bg-[#2b3348] dark:text-[#f0c550]"
                       style={{ padding: "0.5rem 1rem", fontSize: "1rem" }}
                     >
                       Education
@@ -163,13 +163,13 @@ const Education = () => {
                   >
                     <div className="min-w-0">
                       <h3
-                        className="font-semibold leading-tight text-slate-900 dark:text-white"
+                        className="font-semibold leading-tight text-brand-light-text dark:text-white"
                         style={{ fontSize: "3.5rem" }}
                       >
                         {card.school}
                       </h3>
                       <p
-                        className="font-semibold text-[#d29b12] dark:text-yellow-300"
+                        className="font-semibold text-brand-light-accent dark:text-yellow-300"
                         style={{ marginTop: "0.75rem", fontSize: "2.25rem" }}
                       >
                         {card.program}
@@ -186,7 +186,7 @@ const Education = () => {
                   {card.coursework && (
                     <div style={{ marginBottom: index === 1 ? "2rem" : 0 }}>
                       <h4
-                        className="font-semibold text-slate-900 dark:text-white"
+                        className="font-semibold text-brand-light-text dark:text-white"
                         style={{ marginBottom: "1rem", fontSize: "2rem" }}
                       >
                         Relevant Coursework
@@ -195,7 +195,7 @@ const Education = () => {
                         {card.coursework.map((course) => (
                           <li
                             key={course}
-                            className="rounded-2xl bg-[#f8eedc] text-[#c47a1d] dark:bg-[#2b3348] dark:text-[#f0c550]"
+                            className="rounded-2xl bg-brand-light-page text-brand-light-accent dark:bg-[#2b3348] dark:text-[#f0c550]"
                             style={{ padding: "0.85rem 1.4rem", fontSize: "1.25rem", lineHeight: 1.6 }}
                           >
                             {course}
@@ -208,7 +208,7 @@ const Education = () => {
                   {index === 1 && (
                     <div>
                       <h4
-                        className="font-semibold text-slate-900 dark:text-white"
+                        className="font-semibold text-brand-light-text dark:text-white"
                         style={{ marginBottom: "1rem", fontSize: "2rem" }}
                       >
                         Activities
@@ -217,7 +217,7 @@ const Education = () => {
                         {activities.map((activity) => (
                           <p
                             key={activity}
-                            className="text-slate-600 dark:text-slate-300"
+                            className="text-brand-light-body dark:text-slate-300"
                             style={{ fontSize: "1.4rem", lineHeight: 1.8 }}
                           >
                             {activity}
@@ -232,7 +232,7 @@ const Education = () => {
                       href={card.href}
                       target="_blank"
                       rel="noreferrer"
-                      className="mt-auto inline-flex items-center self-start rounded-full border border-slate-700 px-6 py-3 font-semibold text-slate-700 transition-colors duration-300 hover:bg-slate-100 dark:border-slate-200 dark:text-slate-100 dark:hover:bg-slate-700"
+                      className="mt-auto inline-flex items-center self-start rounded-full border border-brand-light-text px-6 py-3 font-semibold text-brand-light-text transition-colors duration-300 hover:bg-brand-light-text hover:text-brand-light-page dark:border-slate-200 dark:text-slate-100 dark:hover:bg-slate-700"
                       style={{ marginTop: "2rem", fontSize: "1.25rem", gap: "0.5rem" }}
                     >
                       Show credential
