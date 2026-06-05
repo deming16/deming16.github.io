@@ -11,7 +11,7 @@ const TextButton = ({ children, href }: Props) => {
       href={href}
       target="_blank"
       rel="noreferrer"
-      className="btn-text inline-block border-b-[0.1rem] border-black p-[1rem] text-[1.6rem] text-black no-underline transition-all duration-200 hover:translate-y-[-2px] hover:bg-black hover:text-white hover:shadow-[0_1rem_2rem_rgba(0,0,0,0.15)] active:translate-y-0 active:shadow-[0_1rem_2rem_rgba(0,0,0,0.15)]"
+      className="btn-text inline-block border-b-[0.1rem] border-brand-light-text p-[1rem] text-[1.6rem] text-brand-light-text no-underline transition-all duration-200 hover:translate-y-[-2px] hover:bg-brand-light-text hover:text-brand-light-page hover:shadow-[0_1rem_2rem_rgba(0,0,0,0.15)] active:translate-y-0 active:shadow-[0_1rem_2rem_rgba(0,0,0,0.15)] dark:border-slate-200 dark:text-slate-200 dark:hover:bg-slate-200 dark:hover:text-slate-800"
     >
       {children}
     </a>

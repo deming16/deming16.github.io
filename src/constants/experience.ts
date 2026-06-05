@@ -1,26 +1,47 @@
+import nodeflairAdrianTestimonial from "../img/nodeflair-adrian-testimonial.png";
+import nodeflairSeanTestimonial from "../img/nodeflair-sean-testimonial.png";
 import { ExperienceDetail } from "../typings/common";
 
 export const EXPERIENCE_DETAILS: ExperienceDetail[] = [
   {
+    title: "Senior Software Engineer",
+    company: "TikTok",
+    location: "🇸🇬 Singapore",
+    description:
+      "I worked on TikTok Live’s Data Platform and led the Widgets SDK and Data UI library direction",
+    date: "Jul 2024 – Present",
+    pointers: [
+      "Built Widgets SDK and marketplace reducing development cost by 300% for 5 teams with React/ECharts",
+      "Built data model pipeline builder interface used for >1k widget models so far with React/ReactFlow",
+      "Built a LLM powered conversational analytics tool reducing development cost by 20% using React and SSE",
+      "Built SDKs snapshot regression test suite and monitoring to improve stability with Jest, RTL, Rstest and Slardar",
+      "Minimized hand-coding for 7 engineers by promoting Claude Code agentic workflows, skills, and SDD workflow",
+      "Developed a Golang service automating widgets metadata population into ElasticSearch store enabling LLM RAG",
+      "Extracted and transformed data from underlying ClickHouse stores for use in widget service with SQL",
+      "Upskilled 25+ engineers through quarterly sharings on platform architecture, AI coding tools and internal tools",
+    ],
+    techStack: ["TypeScript", "React", "Node/Express", "Jest", "Golang", "SQL"],
+  },
+  {
     title: "Software Engineer",
     company: "TikTok",
-    location: "Singapore",
-    description: "I worked on TikTok Live’s Data Platform and AML Platform",
-    date: "Aug 2022 – Present",
+    location: "🇸🇬 Singapore",
+    description:
+      "I worked on TikTok Live's AML Platform and frontend libraries",
+    date: "Aug 2022 – Jun 2024",
     pointers: [
-      "Built a widget SDK and marketplace that improved data visualisation features time-to-delivery by 300%",
       "Built core frontend components and promoted its usage to >100 engineers across multiple teams and products",
       "Built API services that allow FE components to easily manage Lark credentials and documents using Node/Express",
       "Built AML platform functions that helped alert financial investigators on suspicious behaviours (>100 monthly)",
       "Achieved good stability and response rate on AML Platform by improving code culture and application monitoring",
       "Promoted engineers’ growth by sharing and publishing wikis and articles on various projects and technologies",
     ],
-    techStack: ["TypeScript", "React", "Node/Express"]
+    techStack: ["TypeScript", "React", "Node/Express"],
   },
   {
     title: "Software Engineer",
     company: "Govtech DSAID",
-    location: "Singapore",
+    location: "🇸🇬 Singapore",
     description: "I worked on the Trusted Centre for Sensor Data platform",
     date: "Jun 2021 – Jul 2022",
     pointers: [
@@ -31,25 +52,12 @@ export const EXPERIENCE_DETAILS: ExperienceDetail[] = [
       "Migrated UI library and CSS-in-JS solution which improved developer experience and rendering performance",
       "Shared on various software engineering related topics during division level engineering sharing",
     ],
-    techStack: ["TypeScript", "React", "Flask", "Docker", "Azure"]
+    techStack: ["TypeScript", "React", "Flask", "Docker", "Azure"],
   },
   {
-    title: "Software Developer (Freelance)",
-    company: "Vide",
-    location: "Singapore",
-    description: "",
-    date: "Sep 2020 - Dec 2020",
-    pointers: [
-      "Implemented frontend dashboard and forms for upcoming beta launch using Nextjs",
-      "Wrote basic UI test cases using Jest and React Testing Library",
-    ],
-    techStack: ["TypeScript", "Next.js", "Node/Express"]
-
-  },
-  {
-    title: "Software Engineer Intern",
+    title: "Software Engineer",
     company: "Edison",
-    location: "San Francisco Bay Area",
+    location: "🇺🇸 San Francisco Bay Area",
     description:
       "I worked on Edison Mail macOS(Electron) app used by 1.5 million users worldwide",
     date: "Jan 2020 – Dec 2020",
@@ -58,34 +66,41 @@ export const EXPERIENCE_DETAILS: ExperienceDetail[] = [
       "Improved responsiveness (>1sec) by implementing asynchronous calendar operations using Redux Observables",
       "Built support for sync with users’ personal calendar provider using Caldav and Google Calendar API",
     ],
-    techStack: ["TypeScript", "React", "SQLite", "Electron" ]
+    techStack: ["TypeScript", "React", "SQLite", "Electron"],
   },
   {
-    title: "Backend Engineer Intern",
+    title: "Founding Software Engineer",
     company: "NodeFlair",
-    location: "Singapore",
+    location: "🇸🇬 Singapore",
     description:
-      "I worked on the talent platform which connects companies and tech talents",
+      "I scaled the engineering team from 0 to a reliable team of 7 in a single quarter serving all of the company's engineering needs",
     date: "May 2019 – Jan 2020",
     pointers: [
       "Increased match-to-hire conversion rate (20%) by overhauling talent dashboard service using Rails and PostgreSQL",
       "Improved recruiter-talent interaction experience by implementing real-time chat using Rails Action Cable",
       "Reduced AWS spendings by 50% by migrating from managed service (Beanstalk) to serverless service (Lambda)",
+      "Built and led a team of 7 engineers to revamp the users’ onboarding flow and page designs increased user sign ups by 100%",
+      "Defined engineering principles, hiring process and its purpose in the company that serves as the foundation for the company's engineering culture",
     ],
-    techStack: ["Ruby on Rails", "PostgreSQL" ]
-  },
-  {
-    title: "Web Development Instructor",
-    company: "National University of Singapore",
-    location: "Singapore",
-    description:
-      "Served as instructor for Full Stack Web Development and Git workshops",
-    date: "May 2019 - Jul 2019",
-    pointers: [
-      "Debugged issues faced by students",
-      "Helped students to better understand concepts in web development",
-      "Provided tips to students on web development",
+    techStack: [
+      "Javascript",
+      "React",
+      "Ruby on Rails",
+      "PostgreSQL",
+      "AWS ElasticBeanstalk",
+      "AWS RDS",
     ],
-    techStack: ["TypeScript", "React", "Node/Express"]
+    bottomImages: [
+      {
+        src: nodeflairAdrianTestimonial,
+        alt: "Recommendation from Adrian Goh Jun Wei about Deming's leadership and engineering judgment at NodeFlair",
+      },
+      {
+        src: nodeflairSeanTestimonial,
+        alt: "Recommendation from Sean Cheng about Deming's contributions and patience while working together at NodeFlair",
+      },
+    ],
+    link: "https://nodeflair.com/",
+    linkText: "code() at where you love",
   },
 ];

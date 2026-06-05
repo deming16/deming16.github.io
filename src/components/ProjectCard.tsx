@@ -5,55 +5,84 @@ type Props = {
 };
 
 const ProjectCard = ({ details }: Props) => {
-  const { date, title, techStack, pointers, thumbnail } = details;
-  return (
-    <div className="wow fadeInUp">
-      <div className="perspective-150 group relative h-[30rem] w-[350px]">
-        <div className="card__side--front absolute left-0 top-0 h-[32rem] w-full transform rounded-[10px] shadow-[0_1.5rem_4rem_rgba(0,0,0,0.15)] duration-[800ms] ease-in-out [backface-visibility:hidden] group-hover:[transform:rotateY(-180deg)]">
-          <div>
-            <img
-              alt="thumnail"
-              className="backface-hidden h-[20rem] w-full bg-cover bg-center bg-blend-screen"
-              src={thumbnail}
-            />
-          </div>
-          <h4 className="absolute right-0 top-[28rem] w-[50%] bg-black text-center text-[1.2rem] font-light text-white">
-            <span className="decoration-clone p-[1rem] px-[1.5rem]">
-              {date}
-            </span>
-          </h4>
-          <h4>
-            <ul className="mx-auto w-full list-none pl-[1.5rem]">
-              <li className="m-[0.5rem] text-[1.5rem]">
-                <span className="font-roboto text-3xl font-bold tracking-[2px] text-[#455a64]">
-                  {title}
-                </span>
-              </li>
+  const { date, title, thumbnail, description, techStack, pointers, link } = details;
 
-              <li>
-                {techStack.map((stack) => (
-                  <span
-                    key={stack}
-                    className="font-roboto-mono m-[5px] min-w-[36px] rounded-[20px] bg-[hsla(0,0%,98%,0.9)] px-2 py-1 text-center text-xl shadow-[0_2px_4px_rgb(55_71_79/_20%)]"
-                  >
-                    {stack}
-                  </span>
-                ))}
-              </li>
-            </ul>
-          </h4>
+  const content = (
+    <div
+      className={`group flex h-full flex-col overflow-hidden rounded-2xl bg-brand-light-surface transition-all duration-300 hover:scale-[1.02] hover:bg-brand-light-muted dark:bg-slate-800/50 dark:hover:bg-yellow-300 dark:shadow-none ${link ? "cursor-pointer" : ""}`}
+      style={{ boxShadow: "0 22px 60px rgba(15, 23, 42, 0.12)", transformOrigin: "center" }}
+    >
+      <div className="aspect-[695/494] w-full overflow-hidden bg-brand-light-muted transition-colors duration-300 group-hover:bg-brand-light-border dark:bg-slate-900 dark:group-hover:bg-yellow-300">
+        <img
+          src={thumbnail}
+          alt={`${title} preview`}
+          className="h-full w-full object-cover object-top"
+        />
+      </div>
+
+      <div style={{ padding: "3.5rem" }}>
+        <div
+          className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between"
+          style={{ marginBottom: "2rem" }}
+        >
+          <h3
+            className="font-semibold leading-tight text-brand-light-text transition-colors duration-300 group-hover:text-brand-light-text dark:text-white dark:group-hover:text-slate-950"
+            style={{ fontSize: "3.5rem" }}
+          >
+            {title}
+          </h3>
+          <span
+            className="shrink-0 font-medium text-brand-light-accent transition-colors duration-300 group-hover:text-brand-light-text dark:text-slate-400 dark:group-hover:text-slate-800"
+            style={{ fontSize: "1.4rem" }}
+          >
+            {date}
+          </span>
         </div>
 
-        <div className="absolute left-0 top-0 h-[32rem] w-full rounded-[10px] shadow-[0_1.5rem_4rem_rgba(0,0,0,0.15)] transition-all duration-[800ms] ease-in-out [backface-visibility:hidden] [transform:rotateY(180deg)] group-hover:[transform:rotateY(0)]">
-          <div className="backface-hidden absolute left-1/2 top-1/2 h-[80%] w-[85%] -translate-x-1/2 -translate-y-1/2">
-            <div className="text-10xl mb-4 text-center font-bold">{title}</div>
-            {pointers.map((point) => (
-              <div key={point}>- {point}</div>
-            ))}
-          </div>
+        {description && (
+          <p
+            className="text-brand-light-body transition-colors duration-300 group-hover:text-brand-light-text dark:text-slate-300 dark:group-hover:text-slate-900"
+            style={{ marginBottom: "2rem", fontSize: "1.4rem", lineHeight: 1.8 }}
+          >
+            {description}
+          </p>
+        )}
+
+        <ul style={{ marginBottom: "2rem", display: "grid", gap: "1rem" }}>
+          {pointers.map((pointer, index) => (
+            <li
+              key={index}
+              className="text-brand-light-body transition-colors duration-300 group-hover:text-brand-light-text dark:text-slate-300 dark:group-hover:text-slate-900"
+              style={{ fontSize: "1.4rem", lineHeight: 1.8 }}
+            >
+              {pointer}
+            </li>
+          ))}
+        </ul>
+
+        <div className="flex flex-wrap gap-3">
+          {techStack.map((stack) => (
+            <span
+              key={stack}
+              className="rounded-full bg-brand-light-page font-semibold text-brand-light-accent transition-colors duration-300 group-hover:bg-brand-light-text group-hover:text-brand-light-page dark:bg-[#2b3348] dark:text-[#f0c550] dark:group-hover:bg-slate-900 dark:group-hover:text-amber-300"
+              style={{ padding: "0.5rem 1rem", fontSize: "1rem" }}
+            >
+              {stack}
+            </span>
+          ))}
         </div>
       </div>
     </div>
+  );
+
+  if (!link) {
+    return content;
+  }
+
+  return (
+    <a href={link} target="_blank" rel="noreferrer" className="block h-full">
+      {content}
+    </a>
   );
 };
 

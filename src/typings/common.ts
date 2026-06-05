@@ -5,7 +5,13 @@ export type ExperienceDetail = {
   description: string;
   date: string;
   pointers: string[];
-  techStack: string[]
+  techStack: string[];
+  bottomImages?: {
+    src: string;
+    alt: string;
+  }[];
+  link?: string;
+  linkText?: string;
 };
 
 export type ProjectDetail = {
@@ -15,4 +21,5 @@ export type ProjectDetail = {
   description?: string;
   techStack: string[];
   pointers: string[];
+  link?: string;
 };

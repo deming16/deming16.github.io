@@ -18,6 +18,7 @@ const backfaceVisibility = plugin(function ({ addUtilities }) {
   });
 });
 module.exports = {
+  darkMode: "class",
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   plugins: [
     function ({ addUtilities }) {
@@ -45,6 +46,31 @@ module.exports = {
         // Define your colors (assuming $color-black = #000 and $color-white = #fff)
         black: "#000",
         white: "#fff",
+        // Theme colors
+        primary: {
+          light: "#f7f7f7",
+          dark: "#0f172a",
+        },
+        secondary: {
+          light: "#ffffff",
+          dark: "#1e293b",
+        },
+        accent: {
+          light: "#2e3830",
+          dark: "#22c55e",
+        },
+        cream: "#e3d7c4",
+        brand: {
+          light: {
+            page: "#f6e7b8",
+            surface: "#fbf2d6",
+            muted: "#efe1b5",
+            text: "#17120b",
+            body: "#3f3320",
+            accent: "#af6f12",
+            border: "#cfb36a",
+          },
+        },
       },
       spacing: {
         "4rem": "4rem",
