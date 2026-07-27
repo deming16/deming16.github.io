@@ -5,6 +5,7 @@ export type ExperienceDetail = {
   description: string;
   date: string;
   pointers: string[];
+  awards?: string[];
   techStack: string[];
   bottomImages?: {
     src: string;

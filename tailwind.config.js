@@ -62,9 +62,9 @@ module.exports = {
         cream: "#e3d7c4",
         brand: {
           light: {
-            page: "#f6e7b8",
-            surface: "#fbf2d6",
-            muted: "#efe1b5",
+            page: "#ffffff",
+            surface: "#ffffff",
+            muted: "#ffffff",
             text: "#17120b",
             body: "#3f3320",
             accent: "#af6f12",
