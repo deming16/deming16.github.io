@@ -14,6 +14,31 @@
       content="Deming Resume"
     />
     <script>
+      // Restore the route requested before the 404.html redirect brought us
+      // back to the SPA root. Mirrors the encoding in 404.html.
+      (function () {
+        try {
+          var l = window.location;
+          if (l.search[1] === "/") {
+            var decoded =
+              l.search
+                .slice(1)
+                .split("&")
+                .map(function (kv) {
+                  return kv.replace(/~and~/g, "&");
+                })
+                .join("&");
+            var hash = l.hash;
+            window.history.replaceState(
+              null,
+              null,
+              l.pathname + decoded + hash
+            );
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <script>
       (function () {
         try {
           var savedTheme = localStorage.getItem("theme");
