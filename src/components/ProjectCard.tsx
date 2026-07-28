@@ -12,7 +12,7 @@ const ProjectCard = ({ details }: Props) => {
       className={`group flex h-full flex-col overflow-hidden rounded-2xl bg-brand-light-surface transition-all duration-300 hover:scale-[1.02] hover:bg-brand-light-muted dark:bg-slate-800/50 dark:hover:bg-yellow-300 dark:shadow-none ${link ? "cursor-pointer" : ""}`}
       style={{ boxShadow: "0 22px 60px rgba(15, 23, 42, 0.12)", transformOrigin: "center" }}
     >
-      <div className="aspect-[695/494] w-full overflow-hidden bg-brand-light-muted transition-colors duration-300 group-hover:bg-brand-light-border dark:bg-slate-900 dark:group-hover:bg-yellow-300">
+      <div className="aspect-[695/300] w-full overflow-hidden bg-brand-light-muted transition-colors duration-300 group-hover:bg-brand-light-border dark:bg-slate-900 dark:group-hover:bg-yellow-300">
         <img
           src={thumbnail}
           alt={`${title} preview`}
@@ -22,7 +22,7 @@ const ProjectCard = ({ details }: Props) => {
 
       <div style={{ padding: "3.5rem" }}>
         <div
-          className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between"
+          className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between"
           style={{ marginBottom: "2rem" }}
         >
           <h3

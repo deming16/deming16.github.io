@@ -21,10 +21,6 @@ export const EXPERIENCE_DETAILS: ExperienceDetail[] = [
       "Upskilled 25+ engineers through quarterly sharings on platform architecture, AI coding tools and internal tools",
     ],
     techStack: ["TypeScript", "React", "Node/Express", "Jest", "Golang", "SQL"],
-    awards: [
-      "2025: Exceeding Expectations award for the Widgets SDK which has become the new default for data visualisation solutions in Live Platform",
-      "2026: Live Platform Best AI Coding Award for developing and promoting AI workflows throughout SDLC to the data platform team",
-    ],
   },
   {
     title: "Software Engineer",

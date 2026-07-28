@@ -13,7 +13,6 @@ const ExperienceCard = ({ details }: Props) => {
     description,
     date,
     pointers,
-    awards,
     techStack,
     bottomImages,
     link,
@@ -74,28 +73,6 @@ const ExperienceCard = ({ details }: Props) => {
             </li>
           ))}
         </ul>
-
-        {awards?.length ? (
-          <div style={{ marginBottom: "2rem" }}>
-            <h4
-              className="font-semibold text-brand-light-accent dark:text-yellow-300"
-              style={{ fontSize: "1.6rem", marginBottom: "1rem" }}
-            >
-              Awards
-            </h4>
-            <ul style={{ gap: "1rem", display: "grid" }}>
-              {awards.map((award, index) => (
-                <li
-                  key={index}
-                  className="text-brand-light-body dark:text-slate-300"
-                  style={{ fontSize: "1.4rem", lineHeight: 1.8 }}
-                >
-                  {award}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ) : null}
 
         <div className="flex flex-wrap gap-3">
           {techStack.map((stack) => (

@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Education from "./pages/education/Education";
 import Experience from "./pages/experience/Experience";
-import Projects from "./pages/projects/Projects";
+import Misc from "./pages/misc/Misc";
 //@ts-ignore
 import WOW from "wowjs";
 import TopNavigation from "./components/TopNavigation";
@@ -52,7 +52,7 @@ function App() {
           <main style={{ paddingTop: "8.5rem" }}>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/projects" element={<Projects />} />
+              <Route path="/misc" element={<Misc />} />
               <Route path="/experience" element={<Experience />} />
               <Route path="/education" element={<Education />} />
             </Routes>

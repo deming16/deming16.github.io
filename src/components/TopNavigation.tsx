@@ -7,7 +7,7 @@ const navItems = [
   { path: "/", label: "HOME" },
   { path: "/experience", label: "EXPERIENCE" },
   { path: "/education", label: "EDUCATION & CERTIFICATIONS" },
-  { path: "/projects", label: "PROJECTS" },
+  { path: "/misc", label: "MISC" },
 ];
 
 const linkClasses = ({ isActive }: { isActive: boolean }) =>
